@@ -1,0 +1,31 @@
+// Bootstrap colors
+$colors: (
+    'bg'        : white, 
+    'text'      : black, 
+    'primary'   : #007bff, 
+    'secondary' : #6c757d, 
+    'success'   : #28a745, 
+    'info'      : #17a2b8, 
+    'warning'   : #ffc107, 
+    'danger'    : #dc3545, 
+    'light'     : #f8f9fa,
+    'dark'      : #343a40,
+    'body'      : #212529,
+    'muted'     : #6c757d,
+);
+
+// Custom Colors
+
+$Black : black ;
+$RedCrimson : #9b0505;
+$GreyDark : #141414;
+$GreyLight : #434343;
+$GreyDarkTrans : #141414b4;
+$GreyLightTrans : #4343439c;
+
+// Custom Gradients
+
+$BlaRedGradient1 : linear-gradient(119deg, $Black 10%, $RedCrimson 90%);
+$BlaRedGradient2 : linear-gradient(119deg, $Black 47%, $RedCrimson 53%);
+$BlaRedGradient3 : linear-gradient(-10deg, $Black ,$RedCrimson 40%, $RedCrimson 60% , $Black);
+$bgCcustomTtitle : linear-gradient(119deg, $GreyLightTrans 30%, $GreyDarkTrans );
