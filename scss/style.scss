@@ -1,0 +1,107 @@
+@import "_variables";
+@import "_colors";
+@import "_typo";
+@import "_mixins";
+@import "_extends";
+
+*{
+    box-sizing: border-box;
+}
+// BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY
+
+body{
+    background-image: url("../assets/images/background_img.webp");
+    @include bg_img_cov_fix;
+    @include footer_bottom1;
+}
+
+// HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER 
+
+header{    
+    nav li>a{
+        background: $BlaRedGradient1 !important;
+    }
+    h1{
+        background: $BlaRedGradient3 !important;
+        -webkit-text-stroke: 0.5px black;
+
+    }
+    nav li>a,  h1{
+        color: transparent !important;        
+        background-clip: text   !important;
+        font-weight: bold!important;
+
+    }
+}
+.brand_size{
+    height: 4em;
+}
+.brandCustom{
+    max-width: 8em;
+}
+.bg_custom_title{
+    background: $bgCcustomTtitle;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    width: min-content;
+    vertical-align: middle;
+}
+// MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN 
+main {
+    background-color: transparent;
+}
+
+.decalageMain{ 
+    height: 11.75em;
+    margin-bottom: 0;
+}
+
+// FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER 
+footer{
+    @include footer_bottom2;
+}
+
+// RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE 
+@include breakpointMax($size: lg){
+    nav li>a{
+        color: transparent !important;
+        background: $BlaRedGradient2 !important;
+        background-clip: text   !important;
+    }
+    .hide_max_lg{
+        display: none;
+    }
+}
+
+@include breakpointMin($size: lg){
+    .hide_min_lg{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// EXEMPLE
+
+// header{
+//     @extend %font-journal;
+
+//     >span{
+//         @include TitleBlaWhi;
+//         @extend %fright;
+//         padding: 0.3em .5em;
+//     }
+//     .titre_header{
+//         @extend %flex;
+//     }
+// }
