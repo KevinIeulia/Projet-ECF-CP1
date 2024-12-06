@@ -3,49 +3,14 @@
 <style>    
     th, tr, td {border : 2px black solid;text-align:center;}  th{color:white; background-color: black } .not_ok{background-color:red} .ok{background-color:green} .titre{background-color: #413f3f} tr:nth-child(even) {background-color: #d7d9f2;color:black} 
 </style>
-<!-- SPRINT EXEMPLE -->
 
-<table> 
-    <tr>
-        <th colspan="5"> Sprint 1 - (8h00 - 12h00 14 Nov 2024) </th>
-    </tr>        
-    <tr>
-        <th class="titre"> OBJECTIF DU SPRINT </th>
-        <th class="titre"> TACHES </th>
-        <th class="titre"> RESPONSABLE </th>
-        <th class="titre"> ESTIMATION DE POINTS </th>
-        <th class="titre"> ÉTAT </th>
-    </tr>
-    <tr>
-        <td>Créer user Story, Sprint, Kanban, Backlog, structure du site, html du site</td>
-        <td>-Création de Story, Sprint, Kanban, Backlog <br> -Mise en place de la structure HTML </td>
-        <td>xxx</td>
-        <td>xxx</td>
-        <td class="not_ok"></td>
-    </tr>
-</table>
-<table> 
-    <tr>
-        <th colspan="2">BACKLOG SPRINT 1</th>
-    </tr>
-    <tr>
-        <td>1</td>
-        <td>Création Story, Sprint, Kanban, Backlog
-</td>
-    </tr>
-    <tr>
-        <td>2</td>
-        <td>Développement de la structure HTML
-</td>
-    </tr>
-</table>
 
 ----------------------------------------------------------------------------
 
 <!-- SPRINT 1 -->
 <table> 
     <tr>
-        <th colspan="5"> SPRINT 1 durée/date </th>
+        <th colspan="5"> SPRINT 1 durée 8h - date 02/12/2024 </th>
     </tr>        
     <tr>
         <th class="titre"> OBJECTIF DU SPRINT </th>
@@ -55,11 +20,11 @@
         <th class="titre"> ÉTAT </th>
     </tr>
     <tr>
-        <td>- Créer la gestion de projet : kaban, user story, sprint <br>- Créer la documentation : readme, issues, pseudo-code, use-ai, prototypes, wireframe<br>- Créer le template du projet + ressources graphiques <br> création du projet sur github </td>
+        <td>- Créer la gestion de projet<br>- Créer la documentation<br>- Créer le template du projet + ressources graphiques <br> </td>
         <td>- créer kaban, user story, sprint, readme, issues, pseudo-code, use-ai, prototypes, wireframe, template du projet, ressources graphiques</td>
         <td>I.K</td>
         <td>26 pts</td>
-        <td class="not_ok"></td>
+        <td class="ok"></td>
     </tr>
 </table>
 <table> 
@@ -68,18 +33,44 @@
     </tr>
     <tr>
         <td>1</td>
-        <td>xxxxxxxxxxxxxxxx</td>
+        <td>Documentation créée</td>
     </tr>
     <tr>
         <td>2</td>
-        <td>xxxxxxxxxxxxxxxx</td>
+        <td>Faire une mise à jour réguliére</td>
+    </tr>
+</table>
+<!-- SPRINT 2 -->
+<table> 
+    <tr>
+        <th colspan="5"> SPRINT 2 durée ?? - date 05/12/2024 </th>
+    </tr>        
+    <tr>
+        <th class="titre"> OBJECTIF DU SPRINT </th>
+        <th class="titre"> TACHES </th>
+        <th class="titre"> RESPONSABLE </th>
+        <th class="titre"> ESTIMATION DE POINTS </th>
+        <th class="titre"> ÉTAT </th>
     </tr>
     <tr>
-        <td>3</td>
-        <td>xxxxxxxxxxxxxxxx</td>
+        <td>- Création du projet sur github<br>- Cloner le Projet , et importer le template<br>- Créer le header et le footer<br>- MAJ du contenu des pages contact et legal_notices <br> </td>
+        <td>- Créer le projet IEULIA KEVIN ECF - CP1 sur Github, créer un kanban sur Github project<br> - Créer le HTML et le SCSS pour le header et le footer des pages index, Contact et legal_notices<br>MAJ du HTML et SCSS de la page contact<br>MAJ du HTML et SCSS de la page legal_notice</td>
+        <td>I.K</td>
+        <td>24 pts</td>
+        <td class="not_ok"></td>
+    </tr>
+</table>
+<table> 
+    <tr>
+        <th colspan="2">BACKLOG SPRINT 2</th>
     </tr>
     <tr>
-        <td>4</td>
-        <td>xxxxxxxxxxxxxxxx</td>
+        <td>1</td>
+        <td>xxxx</td>
     </tr>
+    <tr>
+        <td>2</td>
+        <td>xxx</td>
+    </tr>
+
 </table>
