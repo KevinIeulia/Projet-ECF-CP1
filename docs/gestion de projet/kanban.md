@@ -60,8 +60,8 @@
         <td class="done">Importer le template</td>
     </tr>
     <tr>
-        <td class="todo">Créer le header et le footer → HTML + SCSS de la page index</td>
-        <td class="inprog">xxx</td>
+        <td class="todo">xxx</td>
+        <td class="inprog">Créer le header et le footer → HTML + SCSS de la page index</td>
         <td class="done">xxx</td>
     </tr>
     <tr>

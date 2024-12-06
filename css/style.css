@@ -1,0 +1,184 @@
+@font-face {
+  font-family: "COPPERPLATE";
+  src: url("../fonts/copperplategothic_bold.ttf");
+}
+@font-face {
+  font-family: "SKYER";
+  src: url("../fonts/Skyer-TrialVersion.otf");
+}
+footer .footer_link a, footer .social_link a, header nav .nav_theme button, header nav .nav_link a {
+  color: #F8F1E5;
+}
+
+footer .footer_link {
+  background: linear-gradient(90deg, #021C1E, #004445, #2C7873, #6FB98F);
+}
+
+header nav .nav_logo, header nav {
+  display: flex;
+}
+
+header nav .nav_logo, header nav {
+  align-items: center;
+}
+
+footer, header {
+  text-align: center;
+}
+
+footer .footer_link:hover a, header nav .nav_link:hover a {
+  transition: 0.2s ease;
+  opacity: 0.3;
+}
+
+footer .footer_link a, header nav .nav_link a {
+  font-family: "SKYER";
+  letter-spacing: 0.1em;
+  text-decoration: none;
+}
+
+footer .footer_link a:hover, header nav .nav_link a:hover {
+  transition: 1s ease;
+  opacity: initial;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../assets/imgs/background/background_img_001.webp");
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header .logo_site_max {
+  width: 100%;
+  height: auto;
+  max-width: 25em;
+}
+header nav {
+  justify-content: space-between;
+  background: linear-gradient(90deg, #021C1E, #004445, #2C7873, #6FB98F);
+  padding: 0 1em;
+  border-top: 1px solid #F8F1E5;
+  border-bottom: 1px solid #F8F1E5;
+}
+header nav .nav_logo {
+  width: 15%;
+  margin: 0.2em 0;
+}
+header nav .nav_logo img {
+  width: 2.8em;
+  height: auto;
+}
+header nav .nav_link {
+  width: 70%;
+}
+header nav .nav_link a {
+  font-size: 1.2em;
+  width: 8em;
+  display: inline-block;
+  border-radius: 5px;
+}
+header nav .nav_link a:hover {
+  padding: 0.2em;
+  margin: 0.2em 2em;
+  background-color: #F8F1E5;
+  color: #2C7873;
+}
+header nav .nav_theme {
+  width: 15%;
+  text-align: right;
+}
+header nav .nav_theme button {
+  background: transparent;
+  border-color: #2C7873;
+  border-radius: 50px;
+  margin: 0.5em;
+  width: 2em;
+  height: 2em;
+}
+
+footer {
+  margin-top: auto;
+}
+footer span {
+  color: rgba(111, 185, 143, 0.6117647059);
+}
+footer .social_link a {
+  margin: 0.2em 0.3em;
+}
+footer .footer_link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer_link a {
+  margin: 0.2em 0;
+  padding: 0 2em;
+  width: 16em;
+}
+footer .footer_link a:hover {
+  font-weight: bold;
+}
+footer .f_link_left {
+  text-align: right;
+  margin-right: 0.5em;
+}
+footer .f_link_right {
+  text-align: left;
+  margin-left: 0.5em;
+  border-left: 2px solid #F8F1E5;
+}
+
+@media (max-width: 768px) {
+  header .logo_site_max {
+    max-width: 20em;
+  }
+  header nav .nav_logo {
+    width: 15%;
+  }
+  header nav .nav_link {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header nav .nav_link a {
+    margin: 0 1em;
+  }
+  header nav .nav_theme {
+    width: 15%;
+  }
+  header nav .nav_theme button {
+    margin: 0.1em;
+  }
+}
+@media (max-width: 576px) {
+  header .logo_site_max {
+    display: none;
+  }
+  header .logo_site_min {
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    max-width: 80%;
+    margin: 0.5em auto;
+  }
+  header nav .nav_theme button {
+    margin: 0.3em;
+  }
+}
+@media (min-width: 576px) {
+  header .logo_site_max {
+    display: initial;
+  }
+  header .logo_site_min {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
