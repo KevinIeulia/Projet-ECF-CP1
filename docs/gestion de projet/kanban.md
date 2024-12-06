@@ -22,17 +22,17 @@
     <tr>
         <td class="todo">xxx</td>
         <td class="inprog">xxx</td>
-        <td class="done">xxx</td>
+        <td class="done">Créer la gestion de projet</td>
     </tr>
     <tr>
         <td class="todo">xxx</td>
         <td class="inprog">xxx</td>
-        <td class="done">xxx</td>
+        <td class="done">Créer la documentation</td>
     </tr>
     <tr>
         <td class="todo">xxx</td>
         <td class="inprog">xxx</td>
-        <td class="done">xxx</td>
+        <td class="done">Créer le template du projet + ressources graphiques</td>
     </tr>
 </table>
 
@@ -47,15 +47,40 @@
     <tr>
         <td class="todo">xxx</td>
         <td class="inprog">xxx</td>
-        <td class="done">xxx</td>
+        <td class="done">Création du projet IEULIA KEVIN ECF - CP1 sur Github</td>
     </tr>
     <tr>
         <td class="todo">xxx</td>
         <td class="inprog">xxx</td>
-        <td class="done">xxx</td>
+        <td class="done">Cloner le Projet</td>
     </tr>
     <tr>
         <td class="todo">xxx</td>
+        <td class="inprog">xxx</td>
+        <td class="done">Importer le template</td>
+    </tr>
+    <tr>
+        <td class="todo">Créer le header et le footer → HTML + SCSS de la page index</td>
+        <td class="inprog">xxx</td>
+        <td class="done">xxx</td>
+    </tr>
+    <tr>
+        <td class="todo">Créer le header et le footer → HTML + SCSS de la page accueil</td>
+        <td class="inprog">xxx</td>
+        <td class="done">xxx</td>
+    </tr>
+    <tr>
+        <td class="todo">Créer le header et le footer → HTML + SCSS de la page legal_notice</td>
+        <td class="inprog">xxx</td>
+        <td class="done">xxx</td>
+    </tr>
+    <tr>
+        <td class="todo">MAJ du HTML et SCSS de la page contact</td>
+        <td class="inprog">xxx</td>
+        <td class="done">xxx</td>
+    </tr>
+    <tr>
+        <td class="todo">MAJ du HTML et SCSS de la page legal_notice</td>
         <td class="inprog">xxx</td>
         <td class="done">xxx</td>
     </tr>
