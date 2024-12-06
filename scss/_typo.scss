@@ -1,6 +1,13 @@
 @font-face {
-    font-family: "DOF";
-    src: url(../fonts/DaughterOfFortune.ttf);
+    font-family: "COPPERPLATE";
+    src: url("../fonts/copperplategothic_bold.ttf");
 }
 
-$title-font: "DOF";
+$title_font: "COPPERPLATE";
+
+@font-face {
+    font-family: "SKYER";
+    src: url("../fonts/Skyer-TrialVersion.otf");
+}
+
+$link_font: "SKYER";

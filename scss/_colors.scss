@@ -14,18 +14,33 @@ $colors: (
     'muted'     : #6c757d,
 );
 
-// Custom Colors
 
-$Black : black ;
-$RedCrimson : #9b0505;
-$GreyDark : #141414;
-$GreyLight : #434343;
-$GreyDarkTrans : #141414b4;
-$GreyLightTrans : #4343439c;
 
-// Custom Gradients
+// COLORS THEMES
+$BlueBlack : #021C1E;
+$CadetBlue :  #004445;
+$Rain : #2C7873;
+$greenery : #6FB98F;
+$greenery_fade : #6fb98f9c;
+$bone : #F8F1E5;
 
-$BlaRedGradient1 : linear-gradient(119deg, $Black 10%, $RedCrimson 90%);
-$BlaRedGradient2 : linear-gradient(119deg, $Black 47%, $RedCrimson 53%);
-$BlaRedGradient3 : linear-gradient(-10deg, $Black ,$RedCrimson 40%, $RedCrimson 60% , $Black);
-$bgCcustomTtitle : linear-gradient(119deg, $GreyLightTrans 30%, $GreyDarkTrans );
+// GRADIENTS THEMES
+
+$BlueGreenGradient1 : linear-gradient(90deg, $BlueBlack,$CadetBlue,$Rain,$greenery);
+
+
+// // Custom Colors
+
+// $Black : black ;
+// $RedCrimson : #9b0505;
+// $GreyDark : #141414;
+// $GreyLight : #434343;
+// $GreyDarkTrans : #141414b4;
+// $GreyLightTrans : #4343439c;
+
+// // Custom Gradients
+
+// $BlaRedGradient1 : linear-gradient(119deg, $Black 10%, $RedCrimson 90%);
+// $BlaRedGradient2 : linear-gradient(119deg, $Black 47%, $RedCrimson 53%);
+// $BlaRedGradient3 : linear-gradient(-10deg, $Black ,$RedCrimson 40%, $RedCrimson 60% , $Black);
+// $bgCcustomTtitle : linear-gradient(119deg, $GreyLightTrans 30%, $GreyDarkTrans );
