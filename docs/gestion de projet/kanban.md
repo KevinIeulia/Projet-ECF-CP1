@@ -70,9 +70,9 @@
         <td class="done">Créer le header et le footer → HTML + SCSS de la page contact</td>
     </tr>
     <tr>
-        <td class="todo">Créer le header et le footer → HTML + SCSS de la page legal_notice</td>
+        <td class="todo"></td>
         <td class="inprog"></td>
-        <td class="done"></td>
+        <td class="done">Créer le header et le footer → HTML + SCSS de la page legal_notice</td>
     </tr>
     <tr>
         <td class="todo">HTML et SCSS de la page contact</td>
