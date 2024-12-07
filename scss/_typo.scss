@@ -11,3 +11,10 @@ $title_font: "COPPERPLATE";
 }
 
 $link_font: "SKYER";
+
+@font-face {
+    font-family: "AKIRA";
+    src: url("../fonts/Akira_Expanded_Demo.otf");
+}
+
+$text_font: "AKIRA";

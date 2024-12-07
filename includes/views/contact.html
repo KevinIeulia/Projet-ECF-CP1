@@ -19,38 +19,76 @@
 <body>
     <header>
         <!-- LOGO SITE -->
-         <section>
-             <img src="../../assets/imgs/logo/Logo site dark.webp" class="logo_site_max" alt="Logo portfolio ieulia kevin" title="Logo portfolio ieulia kevin">
-             <img src="../../assets/imgs/logo/Logo site dark linear.webp" class="logo_site_min" alt="Logo portfolio ieulia kevin" title="Logo portfolio ieulia kevin">
-         </section>
+        <section>
+            <img src="../../assets/imgs/logo/Logo site dark.webp" class="logo_site_max"
+                alt="Logo portfolio ieulia kevin" title="Logo portfolio ieulia kevin">
+            <img src="../../assets/imgs/logo/Logo site dark linear.webp" class="logo_site_min"
+                alt="Logo portfolio ieulia kevin" title="Logo portfolio ieulia kevin">
+        </section>
         <!-- NAVBAR -->
-         <section>
-             <nav>
-                 <!-- LOGO NAV -->
-                 <div class="nav_logo">
-                     <img src="../../assets/imgs/logo/IK1.webp" alt="logo I.K portfolio" title="logo I.K portfolio">
-                 </div>
-                 <!-- LIENS -->
-                 <div class="nav_link">
-                     <a href="../../index.html">ACCUEIL</a>
-                     <a href="">CV</a>
-                     <a href="">RÉALISATION</a>
-                 </div>
-                 <!-- THEME DARK/LIGHT-->
-                 <div class="nav_theme">
-                     <!-- change solid by regular -->
-                     <button type="button">
-                         <i class="fa-solid fa-moon"></i>
-                     </button>
-                     <button type="button">
-                         <i class="fa-solid fa-sun"></i>
-                     </button>    
-                 </div>
-             </nav>
-         </section>
+        <section>
+            <nav>
+                <!-- LOGO NAV -->
+                <div class="nav_logo">
+                    <img src="../../assets/imgs/logo/IK1.webp" alt="logo I.K portfolio" title="logo I.K portfolio">
+                </div>
+                <!-- LIENS -->
+                <div class="nav_link">
+                    <a href="../../index.html">ACCUEIL</a>
+                    <a href="">CV</a>
+                    <a href="">RÉALISATION</a>
+                </div>
+                <!-- THEME DARK/LIGHT-->
+                <div class="nav_theme">
+                    <!-- change solid by regular to switch style-->
+                    <button type="button">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                    <button type="button">
+                        <i class="fa-solid fa-sun"></i>
+                    </button>
+                </div>
+            </nav>
+        </section>
     </header>
-    <main>
-        
+    <main class="main_contact">
+        <section>
+            <!-- TITRE -->
+             <div class="bg_titre">
+                 <h1>
+                     CONTACTEZ-MOI
+                 </h1>
+             </div>
+            <div class="container">
+                <div class="row">
+                    <div class="bg_form col-11 col-sm-10 col-md-9 col-lg-7 col-xl-6 col-xxl-5">
+                        <!-- FORMULAIRE DE CONTACT -->
+                        <form action="http://bienvu.net/script.php" method="post">
+                            <fieldset>
+                                <legend>FORMULAIRE</legend>
+                                <!-- NOM -->
+                                <label for="nom">Nom :</label><br>
+                                <input type="text" id="nom" name="nom" required >
+                                <!-- PRENOM -->
+                                <label for="prenom">Prenom :</label><br>
+                                <input type="text" id="prenom" name="prenom" required >
+                                <!-- EMAIL -->
+                                <label for="email">Email :</label><br>
+                                <input type="email" id="email" name="email" required >
+                                <!-- MESSAGE -->
+                                <label for="Message">Message :</label><br>
+                                <textarea id="Message" name="Message"></textarea>
+                            </fieldset>
+                            <!-- BUTTON -->
+                             <div class="form_btn">
+                                 <input type="submit" value="Validez" class="btn_form">
+                                 <input type="reset" value="Annulez" class="btn_form">
+                             </div>
+                        </form>
+                    </div>
+                </div>
+             </div>
+        </section>
     </main>
     <footer>
         <!-- SOCIAL MEDIA -->
@@ -74,7 +112,7 @@
                 <a href="legal_notices.html" class="f_link_right">MENTIONS LÉGALES</a>
             </div>
         </section>
-       
+
     </footer>
 </body>
 
