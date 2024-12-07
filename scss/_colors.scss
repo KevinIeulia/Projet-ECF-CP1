@@ -20,13 +20,17 @@ $colors: (
 $BlueBlack : #021C1E;
 $CadetBlue :  #004445;
 $Rain : #2C7873;
-$greenery : #6FB98F;
+$Greenery : #6FB98F;
 $greenery_fade : #6fb98f9c;
-$bone : #F8F1E5;
+$Bone : #F8F1E5;
+$Bone_fade1 : #f8f1e500;
+$Bone_fade2 : #f8f1e513;
 
 // GRADIENTS THEMES
 
-$BlueGreenGradient1 : linear-gradient(90deg, $BlueBlack,$CadetBlue,$Rain,$greenery);
+$BlueGreenGradient1 : linear-gradient(90deg, $BlueBlack,$CadetBlue,$Rain,$Greenery);
+$BlueGreenGradient2 : linear-gradient(90deg, $BlueBlack 30%,$CadetBlue 50%,$Rain 70%,$Greenery 100%);
+$BoneGradient1 : linear-gradient(90deg, $Bone_fade1 0%,$Bone 45%,$Bone 55%,$Bone_fade1 100%);
 
 
 // // Custom Colors

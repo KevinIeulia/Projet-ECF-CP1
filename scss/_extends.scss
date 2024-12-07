@@ -1,5 +1,5 @@
 %text_bone{
-    color: $bone;
+    color: $Bone;
 }
 %bg_gradient_barre{
     background: $BlueGreenGradient1;
@@ -10,21 +10,32 @@
 %it_center{
     align-items: center;
 }
+%flex_column{
+    flex-direction: column;
+}
 %text_center{
     text-align: center;
 }
+%text_bold{
+    font-weight: bold;
+}
 %section_link_hover{
     transition: 0.2s ease; 
-            opacity: 0.3;
+    opacity: 0.3;
 }
 %link_fix{
     font-family: $link_font;
     letter-spacing: 0.1em; 
     text-decoration: none;
 }
+
 %link_fix_hover{
     transition: 1s ease;
     opacity: initial;
+}
+%margin_auto{
+    margin-left: auto;
+    margin-right: auto;
 }
 // EXEMPLES
 // @extend %font-journal;

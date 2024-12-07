@@ -6,24 +6,36 @@
   font-family: "SKYER";
   src: url("../fonts/Skyer-TrialVersion.otf");
 }
-footer .footer_link a, footer .social_link a, header nav .nav_theme button, header nav .nav_link a {
+@font-face {
+  font-family: "AKIRA";
+  src: url("../fonts/Akira_Expanded_Demo.otf");
+}
+footer .footer_link a, footer .social_link a, .main_contact .bg_form form .form_btn .btn_form, .main_contact .bg_form, header nav .nav_theme button, header nav .nav_link a {
   color: #F8F1E5;
 }
 
-footer .footer_link {
+footer .footer_link, .main_contact .bg_form form .form_btn .btn_form {
   background: linear-gradient(90deg, #021C1E, #004445, #2C7873, #6FB98F);
 }
 
-header nav .nav_logo, header nav {
+.main_contact .bg_form, header nav .nav_logo, header nav {
   display: flex;
 }
 
-header nav .nav_logo, header nav {
+.main_contact .bg_form, header nav .nav_logo, header nav {
   align-items: center;
 }
 
-footer, header {
+.main_contact .bg_form {
+  flex-direction: column;
+}
+
+footer, .main_contact .bg_form form .form_btn, .main_contact h1, header {
   text-align: center;
+}
+
+footer .footer_link a:hover, .main_contact h1 {
+  font-weight: bold;
 }
 
 footer .footer_link:hover a, header nav .nav_link:hover a {
@@ -40,6 +52,11 @@ footer .footer_link a, header nav .nav_link a {
 footer .footer_link a:hover, header nav .nav_link a:hover {
   transition: 1s ease;
   opacity: initial;
+}
+
+.main_contact .bg_form, .main_contact h1, .main_contact .bg_titre {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 * {
@@ -103,14 +120,72 @@ header nav .nav_theme button {
   height: 2em;
 }
 
+.main_contact .bg_titre {
+  margin-top: 3em;
+  background: linear-gradient(90deg, rgba(248, 241, 229, 0) 0%, #F8F1E5 45%, #F8F1E5 55%, rgba(248, 241, 229, 0) 100%);
+  width: 60%;
+}
+.main_contact h1 {
+  background: linear-gradient(90deg, #021C1E 30%, #004445 50%, #2C7873 70%, #6FB98F 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  width: 10em;
+  font-family: "COPPERPLATE";
+}
+.main_contact .bg_form {
+  background-color: rgba(248, 241, 229, 0.0745098039);
+  border-radius: 1em;
+  margin-top: 3em;
+  padding: 3em 0;
+  font-family: "AKIRA";
+  letter-spacing: 0.1em;
+}
+.main_contact .bg_form form {
+  width: 95%;
+  padding: 1em;
+  border: #6FB98F 1px solid;
+  border-radius: 1em;
+  background-color: #021C1E;
+}
+.main_contact .bg_form form fieldset {
+  padding: 0.2em;
+}
+.main_contact .bg_form form fieldset label {
+  text-align: left;
+}
+.main_contact .bg_form form fieldset input {
+  width: 100%;
+  background-color: #F8F1E5;
+  border: #6FB98F 2px solid;
+  border-radius: 0.2em;
+}
+.main_contact .bg_form form fieldset textarea {
+  width: 100%;
+  height: 20em;
+  background-color: #F8F1E5;
+  border: #6FB98F 2px solid;
+  border-radius: 0.2em;
+}
+.main_contact .bg_form form .form_btn .btn_form {
+  width: 9em;
+  margin-top: 0.5em;
+  padding: 0.2em;
+  border-radius: 0.2em;
+  letter-spacing: 0.1em;
+}
+
 footer {
   margin-top: auto;
 }
 footer span {
   color: rgba(111, 185, 143, 0.6117647059);
 }
+footer .social_link {
+  margin: 0.2em;
+}
 footer .social_link a {
-  margin: 0.2em 0.3em;
+  margin: 0.3em 0.3em;
 }
 footer .footer_link {
   display: flex;
@@ -121,9 +196,6 @@ footer .footer_link a {
   margin: 0.2em 0;
   padding: 0 2em;
   width: 16em;
-}
-footer .footer_link a:hover {
-  font-weight: bold;
 }
 footer .f_link_left {
   text-align: right;
@@ -156,6 +228,10 @@ footer .f_link_right {
   }
   header nav .nav_theme button {
     margin: 0.1em;
+  }
+  .main_contact .bg_titre {
+    margin-top: 2em;
+    width: 95%;
   }
 }
 @media (max-width: 576px) {
