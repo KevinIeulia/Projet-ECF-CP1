@@ -10,31 +10,31 @@
   font-family: "AKIRA";
   src: url("../fonts/Akira_Expanded_Demo.otf");
 }
-footer .footer_link a, footer .social_link a, .main_contact .bg_form form .form_btn .btn_form, .main_contact .bg_form, header nav .nav_theme button, header nav .nav_link a {
+footer .footer_link a, footer .social_link a, .main_LegNot .article_style, .main_contact .form_style form .form_btn .btn_form, .main_contact .form_style, header nav .nav_theme button, header nav .nav_link a {
   color: #F8F1E5;
 }
 
-footer .footer_link, .main_contact .bg_form form .form_btn .btn_form {
+footer .footer_link, .main_contact .form_style form .form_btn .btn_form {
   background: linear-gradient(90deg, #021C1E, #004445, #2C7873, #6FB98F);
 }
 
-.main_contact .bg_form, header nav .nav_logo, header nav {
+.main_LegNot .article_style, .main_contact .form_style, header nav .nav_logo, header nav {
   display: flex;
 }
 
-.main_contact .bg_form, header nav .nav_logo, header nav {
+.main_LegNot .article_style, .main_contact .form_style, header nav .nav_logo, header nav {
   align-items: center;
 }
 
-.main_contact .bg_form {
+.main_LegNot .article_style, .main_contact .form_style {
   flex-direction: column;
 }
 
-footer, .main_contact .bg_form form .form_btn, .main_contact h1, header {
+footer, .main_contact .form_style form .form_btn, main h1, header {
   text-align: center;
 }
 
-footer .footer_link a:hover, .main_contact h1 {
+footer .footer_link a:hover, main h1 {
   font-weight: bold;
 }
 
@@ -54,7 +54,7 @@ footer .footer_link a:hover, header nav .nav_link a:hover {
   opacity: initial;
 }
 
-.main_contact .bg_form, .main_contact h1, .main_contact .bg_titre {
+.main_LegNot .article_style, .main_contact .form_style, main h1, main .bg_titre {
   margin-left: auto;
   margin-right: auto;
 }
@@ -120,59 +120,91 @@ header nav .nav_theme button {
   height: 2em;
 }
 
-.main_contact .bg_titre {
+main .bg_titre {
   margin-top: 3em;
   background: linear-gradient(90deg, rgba(248, 241, 229, 0) 0%, #F8F1E5 45%, #F8F1E5 55%, rgba(248, 241, 229, 0) 100%);
-  width: 60%;
 }
-.main_contact h1 {
+main h1 {
   background: linear-gradient(90deg, #021C1E 30%, #004445 50%, #2C7873 70%, #6FB98F 100%);
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
-  width: 10em;
   font-family: "COPPERPLATE";
 }
-.main_contact .bg_form {
+
+.main_contact .bg_titre {
+  width: 60%;
+}
+.main_contact h1 {
+  width: 10em;
+}
+.main_contact .form_style {
   background-color: rgba(248, 241, 229, 0.0745098039);
   border-radius: 1em;
   margin-top: 3em;
-  padding: 3em 0;
-  font-family: "AKIRA";
-  letter-spacing: 0.1em;
+  margin-bottom: 3em;
+  padding: 1em;
 }
-.main_contact .bg_form form {
+.main_contact .form_style form {
   width: 95%;
   padding: 1em;
   border: #6FB98F 1px solid;
   border-radius: 1em;
   background-color: #021C1E;
+  height: 100%;
+  font-family: "AKIRA";
+  letter-spacing: 0.1em;
 }
-.main_contact .bg_form form fieldset {
+.main_contact .form_style form fieldset {
   padding: 0.2em;
 }
-.main_contact .bg_form form fieldset label {
+.main_contact .form_style form fieldset label {
   text-align: left;
 }
-.main_contact .bg_form form fieldset input {
+.main_contact .form_style form fieldset input {
   width: 100%;
   background-color: #F8F1E5;
   border: #6FB98F 2px solid;
   border-radius: 0.2em;
 }
-.main_contact .bg_form form fieldset textarea {
+.main_contact .form_style form fieldset textarea {
   width: 100%;
   height: 20em;
   background-color: #F8F1E5;
   border: #6FB98F 2px solid;
   border-radius: 0.2em;
 }
-.main_contact .bg_form form .form_btn .btn_form {
+.main_contact .form_style form .form_btn .btn_form {
   width: 9em;
   margin-top: 0.5em;
   padding: 0.2em;
   border-radius: 0.2em;
   letter-spacing: 0.1em;
+}
+
+.main_LegNot .bg_titre {
+  width: 70%;
+}
+.main_LegNot h1 {
+  width: 16em;
+}
+.main_LegNot .article_style {
+  background-color: rgba(248, 241, 229, 0.0745098039);
+  border-radius: 1em;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  padding: 1em;
+}
+.main_LegNot .article_style section {
+  width: 95%;
+  padding: 1em;
+  border: #6FB98F 1px solid;
+  border-radius: 1em;
+  background-color: #021C1E;
+  height: 100%;
+}
+.main_LegNot .article_style section h2 {
+  text-decoration: underline;
 }
 
 footer {
@@ -207,6 +239,30 @@ footer .f_link_right {
   border-left: 2px solid #F8F1E5;
 }
 
+@media (min-width: 576px) {
+  header .logo_site_max {
+    display: initial;
+  }
+  header .logo_site_min {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  header .logo_site_max {
+    display: none;
+  }
+  header .logo_site_min {
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    max-width: 80%;
+    margin: 0.5em auto;
+  }
+  header nav .nav_theme button {
+    margin: 0.3em;
+  }
+}
 @media (max-width: 768px) {
   header .logo_site_max {
     max-width: 20em;
@@ -229,32 +285,25 @@ footer .f_link_right {
   header nav .nav_theme button {
     margin: 0.1em;
   }
-  .main_contact .bg_titre {
+  .main_contact .bg_titre,
+  .main_LegNot .bg_titre {
     margin-top: 2em;
     width: 95%;
   }
-}
-@media (max-width: 576px) {
-  header .logo_site_max {
-    display: none;
+  .main_LegNot {
+    margin: 1em;
   }
-  header .logo_site_min {
-    display: block;
-    text-align: center;
-    width: 100%;
-    height: auto;
-    max-width: 80%;
-    margin: 0.5em auto;
+  .main_LegNot h1 {
+    width: 10em;
   }
-  header nav .nav_theme button {
-    margin: 0.3em;
+  .main_LegNot .article_style {
+    margin-top: 1em;
+    margin-bottom: 1em;
   }
 }
-@media (min-width: 576px) {
-  header .logo_site_max {
-    display: initial;
-  }
-  header .logo_site_min {
-    display: none;
+@media (max-width: 992px) {
+  .main_LegNot .article_style {
+    margin-top: 1em;
+    margin-bottom: 1em;
   }
 }/*# sourceMappingURL=style.css.map */

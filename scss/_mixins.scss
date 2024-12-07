@@ -3,6 +3,7 @@
     background-size: cover;
     background-attachment: fixed;
 }
+
 //FOOTER ALWAYS ON BOTTOM
 //on body
 @mixin footer_bottom1 {
@@ -10,11 +11,35 @@
     flex-direction: column;
     min-height: 100vh;
 }
+
 //on footer
 @mixin footer_bottom2 {
     margin-top: auto;
 }
 
+//Background transparent , fond des zone principal
+@mixin bg_zone_fade {
+    @extend %d_flex;
+    @extend %it_center;
+    @extend %flex_column;
+    @extend %text_bone;
+    @extend %margin_auto;
+    background-color: $Bone_fade2;
+    border-radius: 1em;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    padding: 1em;
+}
+
+//background dark pour section
+@mixin bg_zone_dark {
+    width: 95%;
+    padding: 1em;
+    border: $Greenery 1px solid;
+    border-radius: 1em;
+    background-color: $BlueBlack;
+    height: 100%;
+}
 
 
 
@@ -26,6 +51,7 @@
             @content;
         }
     }
+
     @else if $size ==sm {
         @media (min-width: 576px) {
             @content;
@@ -49,6 +75,7 @@
             @content;
         }
     }
+
     @else if $size ==xxl {
         @media (min-width: 1400px) {
             @content;
@@ -80,6 +107,7 @@
             @content;
         }
     }
+
     @else if $size ==xxl {
         @media (max-width: 1400px) {
             @content;

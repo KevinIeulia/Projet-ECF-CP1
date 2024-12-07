@@ -19,6 +19,7 @@ body {
 // HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER 
 header {
     @extend %text_center;
+
     // LOGO SITE
     .logo_site_max {
         width: 100%;
@@ -56,6 +57,7 @@ header {
 
         .nav_link {
             width: 70%;
+
             a {
                 @extend %link_fix;
                 @extend %text_bone;
@@ -64,6 +66,7 @@ header {
                 display: inline-block;
                 border-radius: 5px;
             }
+
             a:hover {
                 padding: .2em;
                 margin: .2em 2em;
@@ -93,59 +96,68 @@ header {
 
 // MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN 
 
-// MAIN PAGE CONTACT
+main {
 
-//TITRE
-.main_contact {
-    .bg_titre{
+    // TITRE DE PAGE (ALL)
+    .bg_titre {
         margin-top: 3em;
         background: $BoneGradient1;
-        width: 60%;
         @extend %margin_auto;
     }
-    h1{
+
+    h1 {
         @extend %text_center;
         @extend %text_bold;
         @extend %margin_auto;
         background: $BlueGreenGradient2;
         background-clip: text;
         color: transparent;
-        width: 10em;
         font-family: $title_font;
     }
+}
+
+// MAIN PAGE CONTACT
+
+.main_contact {
+
+    // TITRE DE PAGE
+    .bg_titre {
+        width: 60%;
+    }
+
+    h1 {
+        width: 10em;
+    }
+
     //FORMULAIRE
-    .bg_form{
-        @extend %d_flex;
-        @extend %it_center;
-        @extend %flex_column;
-        @extend %margin_auto;
-        @extend %text_bone;
-        background-color: $Bone_fade2;
-        border-radius: 1em;
-        margin-top: 3em;
-        padding: 3em 0;
-        font-family: $text_font;
-        letter-spacing: .1em;
-        
-        form{
-            width: 95%;
-            padding: 1em;
-            border: $Greenery 1px solid;
-            border-radius: 1em;
-            background-color: $BlueBlack;
-            
-            fieldset{
+    .form_style {
+        @include bg_zone_fade;
+
+        form {
+            @include bg_zone_dark;
+            // width: 95%;
+            // padding: 1em;
+            // border: $Greenery 1px solid;
+            // border-radius: 1em;
+            // background-color: $BlueBlack;
+            font-family: $text_font;
+            letter-spacing: .1em;
+
+            fieldset {
                 padding: .2em;
-                label{
+
+                label {
                     text-align: left;
                 }
-                input{
+
+                input {
                     width: 100%;
                     background-color: $Bone;
                     border: $Greenery 2px solid;
                     border-radius: .2em;
                 }
-                textarea{
+
+                textarea {
                     width: 100%;
                     height: 20em;
                     background-color: $Bone;
@@ -153,9 +165,11 @@ header {
                     border-radius: .2em;
                 }
             }
-            .form_btn{
+
+            .form_btn {
                 @extend %text_center;
-                .btn_form{
+
+                .btn_form {
                     width: 9em;
                     margin-top: .5em;
                     padding: .2em;
@@ -169,19 +183,46 @@ header {
     }
 }
 
+// MAIN PAGE LEGAL NOTICE
+.main_LegNot {
+
+    // TITRE DE PAGE
+    .bg_titre {
+        width: 70%;
+    }
+
+    h1 {
+        width: 16em;
+    }
+
+    // ARTICLE
+    .article_style {
+        @include bg_zone_fade;
+
+        section {
+            @include bg_zone_dark;
+
+            h2 {
+                text-decoration: underline;
+            }
+        }
+    }
+}
 
 // FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER 
 footer {
     @include footer_bottom2;
     @extend %text_center;
-    
-    span{
+
+    span {
         color: $greenery_fade;
     }
-    .social_link{
+
+    .social_link {
         margin: .2em;
     }
-    .social_link a{
+
+    .social_link a {
         @extend %text_bone;
         margin: 0.3em 0.3em;
     }
@@ -195,6 +236,7 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
+
         a {
             @extend %link_fix;
             @extend %text_bone;
@@ -208,13 +250,15 @@ footer {
             @extend %text_bold;
         }
     }
-    .f_link_left{
+
+    .f_link_left {
         text-align: right;
-        margin-right: .5em ;
+        margin-right: .5em;
     }
-    .f_link_right{
+
+    .f_link_right {
         text-align: left;
-        margin-left: .5em ;
+        margin-left: .5em;
         border-left: 2px solid $Bone;
     }
 }
@@ -222,6 +266,50 @@ footer {
 
 // RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE 
 
+// MEDIA QUERY MINIMUM SM 576px
+@include breakpointMin($size: sm) {
+
+    //  HEADER
+    header {
+        .logo_site_max {
+            display: initial;
+        }
+
+        .logo_site_min {
+            display: none;
+        }
+    }
+}
+
+// MEDIA QUERY MAXIMUM SM 576px
+@include breakpointMax($size: sm) {
+
+    // HEADER
+    header {
+        .logo_site_max {
+            display: none;
+        }
+
+        .logo_site_min {
+            display: block;
+            text-align: center;
+            width: 100%;
+            height: auto;
+            max-width: 80%;
+            margin: .5em auto;
+        }
+
+        nav {
+            .nav_theme {
+                button {
+                    margin: .3em;
+                }
+            }
+        }
+    }
+}
+
+// MEDIA QUERY MAXIMUM MD 768px
 @include breakpointMax($size: md) {
 
     // HEADER
@@ -240,6 +328,7 @@ footer {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+
                 a {
                     margin: 0 1em;
                 }
@@ -254,54 +343,45 @@ footer {
             }
         }
     }
-    // MAIN PAGE CONTACT
-    .main_contact {
-        .bg_titre{
+
+    // MAIN TITRE PAGE (ALL) 
+    .main_contact,
+    .main_LegNot {
+        .bg_titre {
             margin-top: 2em;
             width: 95%;
         }
     }
-}
 
-@include breakpointMax($size: sm) {
+    // MAIN LegNot
+    .main_LegNot {
+        margin: 1em;
 
-    // HEADER
-    header {
-        .logo_site_max {
-            display: none;
+        h1 {
+            width: 10em;
         }
 
-        .logo_site_min {
-            display: block;
-            text-align: center;
-            width: 100%;
-            height: auto;
-            max-width: 80%;
-            margin: .5em auto;
-        }
-        nav {
-            .nav_theme {
-                button {
-                    margin: .3em;
-                }
-            }
+        .article_style {
+            margin-top: 1em;
+            margin-bottom: 1em;
         }
     }
 }
 
-@include breakpointMin($size: sm) {
+// MEDIA QUERY MAXIMUM LG 992px
+@include breakpointMax($size: lg) {
 
-    //  HEADER
-    header {
-        .logo_site_max {
-            display: initial;
-        }
-
-        .logo_site_min {
-            display: none;
+    // MAIN LegNot
+    .main_LegNot {
+        .article_style {
+            margin-top: 1em;
+            margin-bottom: 1em;
         }
     }
 }
+
+
+
 
 
 
