@@ -187,11 +187,18 @@ https://github.com/KevinIeulia/Projet-ECF-CP1.git
 
 ## Éditeur du Site
 
-- **Nom** : [Votre nom]
-- **Adresse** : [Votre adresse]
-- **Email** : [Votre email professionnel]
-- **Téléphone** : [Votre numéro professionnel]
-- **Hébergeur** : [Nom de l'hébergeur, adresse, et contact]
+- **Nom** : IEULIA KEVIN
+- **Adresse** : 1 rue Parmentier 81600 Gaillac
+- **Email** : ieulia.k@gmail.com
+- **Téléphone** : 06.48.21.75.60
+
+## Hébergement du site
+
+- **Nom** : undefined
+- **Raison sociale** : undefined
+- **Adresse** : undefined
+- **Téléphone** : undefined
+- **Contact** : undefined
 
 ## Propriété Intellectuelle
 
