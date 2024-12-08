@@ -10,23 +10,35 @@
   font-family: "AKIRA";
   src: url("../fonts/Akira_Expanded_Demo.otf");
 }
-footer .footer_link a, footer .social_link a, .main_LegNot .article_style, .main_contact .form_style form .form_btn .btn_form, .main_contact .form_style, header nav .nav_theme button, header nav .nav_link a {
+@font-face {
+  font-family: "COMIC";
+  src: url("../fonts/comic.ttf");
+}
+@font-face {
+  font-family: "CONSOLA";
+  src: url("../fonts/consola.ttf");
+}
+@font-face {
+  font-family: "BRUSHSCI";
+  src: url("../fonts/brushsci.ttf");
+}
+footer .footer_link a, footer .social_link a, .main_LegNot .article_style, .main_contact .form_style form .form_btn .btn_form, .main_contact .form_style, .main_index .section_accueil article, header nav .nav_theme button, header nav .nav_link a {
   color: #F8F1E5;
 }
 
 footer .footer_link, .main_contact .form_style form .form_btn .btn_form {
-  background: linear-gradient(90deg, #021C1E, #004445, #2C7873, #6FB98F);
+  background: linear-gradient(90deg, black, #021C1E, #004445, #2C7873, #6FB98F);
 }
 
-.main_LegNot .article_style, .main_contact .form_style, header nav .nav_logo, header nav {
+.main_LegNot .article_style, .main_contact .form_style, .main_index .section_accueil article, header nav .nav_logo, header nav {
   display: flex;
 }
 
-.main_LegNot .article_style, .main_contact .form_style, header nav .nav_logo, header nav {
+.main_LegNot .article_style, .main_contact .form_style, .main_index .section_accueil article, header nav .nav_logo, header nav {
   align-items: center;
 }
 
-.main_LegNot .article_style, .main_contact .form_style {
+.main_LegNot .article_style, .main_contact .form_style, .main_index .section_accueil article {
   flex-direction: column;
 }
 
@@ -54,9 +66,19 @@ footer .footer_link a:hover, header nav .nav_link a:hover {
   opacity: initial;
 }
 
-.main_LegNot .article_style, .main_contact .form_style, main h1, main .bg_titre {
+.main_LegNot .article_style, .main_contact .form_style, .main_index .section_accueil article, main h1, main .bg_titre {
   margin-left: auto;
   margin-right: auto;
+}
+
+.main_LegNot .article_style section, .main_contact .form_style form, .main_index .section_accueil article {
+  font-family: "COMIC";
+  letter-spacing: 0.05em;
+}
+
+.main_index .section_accueil article img {
+  width: 100%;
+  height: auto;
 }
 
 * {
@@ -64,7 +86,7 @@ footer .footer_link a:hover, header nav .nav_link a:hover {
 }
 
 body {
-  background-image: url("../assets/imgs/background/background_img_001.webp");
+  background-image: url("../assets/imgs/background/background_img_012.webp");
   background-size: cover;
   background-attachment: fixed;
   display: flex;
@@ -79,10 +101,10 @@ header .logo_site_max {
 }
 header nav {
   justify-content: space-between;
-  background: linear-gradient(90deg, #021C1E, #004445, #2C7873, #6FB98F);
+  background: linear-gradient(90deg, black, #021C1E, #004445, #2C7873, #6FB98F);
   padding: 0 1em;
-  border-top: 1px solid #F8F1E5;
-  border-bottom: 1px solid #F8F1E5;
+  border-top: 2px solid #F8F1E5;
+  border-bottom: 2px solid #F8F1E5;
 }
 header nav .nav_logo {
   width: 15%;
@@ -122,7 +144,7 @@ header nav .nav_theme button {
 
 main .bg_titre {
   margin-top: 3em;
-  background: linear-gradient(90deg, rgba(248, 241, 229, 0) 0%, #F8F1E5 45%, #F8F1E5 55%, rgba(248, 241, 229, 0) 100%);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #F8F1E5 45%, #F8F1E5 55%, rgba(0, 0, 0, 0) 100%);
 }
 main h1 {
   background: linear-gradient(90deg, #021C1E 30%, #004445 50%, #2C7873 70%, #6FB98F 100%);
@@ -132,14 +154,40 @@ main h1 {
   font-family: "COPPERPLATE";
 }
 
+.main_index .section_accueil .bg_titre {
+  width: 70%;
+}
+.main_index .section_accueil h1 {
+  width: 7em;
+}
+.main_index .section_accueil article {
+  text-align: center;
+}
+.main_index .section_accueil article h2 {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  font-size: 2.5em;
+}
+.main_index .section_accueil article p {
+  font-size: 1.2em;
+}
+.main_index .section_accueil article img {
+  margin-top: 3.5em;
+  margin-bottom: 1.5em;
+  max-width: 25em;
+  border-radius: 25em;
+  border: #F8F1E5 0.5em solid;
+  padding: 0.5em;
+}
+
 .main_contact .bg_titre {
-  width: 60%;
+  width: 70%;
 }
 .main_contact h1 {
   width: 10em;
 }
 .main_contact .form_style {
-  background-color: rgba(248, 241, 229, 0.0745098039);
+  background-color: rgba(248, 241, 229, 0.1098039216);
   border-radius: 1em;
   margin-top: 3em;
   margin-bottom: 3em;
@@ -152,8 +200,6 @@ main h1 {
   border-radius: 1em;
   background-color: #021C1E;
   height: 100%;
-  font-family: "AKIRA";
-  letter-spacing: 0.1em;
 }
 .main_contact .form_style form fieldset {
   padding: 0.2em;
@@ -189,7 +235,7 @@ main h1 {
   width: 16em;
 }
 .main_LegNot .article_style {
-  background-color: rgba(248, 241, 229, 0.0745098039);
+  background-color: rgba(248, 241, 229, 0.1098039216);
   border-radius: 1em;
   margin-top: 3em;
   margin-bottom: 3em;

@@ -11,7 +11,7 @@
 // BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY
 
 body {
-    background-image: url("../assets/imgs/background/background_img_001.webp");
+    background-image: url("../assets/imgs/background/background_img_012.webp");
     @include bg_img_cov_fix;
     @include footer_bottom1;
 }
@@ -34,8 +34,8 @@ header {
         @extend %it_center;
         background: $BlueGreenGradient1;
         padding: 0 1em;
-        border-top: 1px solid $Bone;
-        border-bottom: 1px solid $Bone;
+        border-top: 2px solid $Bone;
+        border-bottom: 2px solid $Bone;
 
         // NAV LOGO
         .nav_logo {
@@ -76,7 +76,7 @@ header {
             }
         }
 
-        // NAV THEME
+        // NAV THEME DARK/LIGHT
         .nav_theme {
             width: 15%;
             text-align: right;
@@ -116,13 +116,63 @@ main {
     }
 }
 
+
+// MAIN PAGE INDEX
+
+.main_index{
+
+    .section_accueil{
+        
+        .bg_titre {
+            width: 70%;
+        }
+        
+        h1 {
+            width: 7em;
+        }
+        article{
+            // @include bg_zone_dark;
+            @include flex_center;
+            @extend %text_bone;
+            @extend %text_font2;
+            text-align: center;
+            h2{
+                margin-top: 1.5em;
+                margin-bottom: 1.5em;
+                font-size: 2.5em;
+            }
+            p{
+                font-size: 1.2em;
+            }
+            img{
+                @extend %img_flex;
+                margin-top: 3.5em;
+                margin-bottom: 1.5em;
+                max-width: 25em;
+                border-radius: 25em;
+                border : $Bone .5em solid;
+                padding: 0.5em;
+            }
+        }
+
+    }
+
+
+// SECTION ACCUEIL
+
+// SECTION CV
+
+// SECTION REALISATIONS
+}
+
+
 // MAIN PAGE CONTACT
 
 .main_contact {
 
     // TITRE DE PAGE
     .bg_titre {
-        width: 60%;
+        width: 70%;
     }
 
     h1 {
@@ -135,13 +185,7 @@ main {
 
         form {
             @include bg_zone_dark;
-            // width: 95%;
-            // padding: 1em;
-            // border: $Greenery 1px solid;
-            // border-radius: 1em;
-            // background-color: $BlueBlack;
-            font-family: $text_font;
-            letter-spacing: .1em;
+            @extend %text_font2;
 
             fieldset {
                 padding: .2em;
@@ -201,6 +245,7 @@ main {
 
         section {
             @include bg_zone_dark;
+            @extend %text_font2;
 
             h2 {
                 text-decoration: underline;

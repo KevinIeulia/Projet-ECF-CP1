@@ -75,12 +75,37 @@
         <td class="done">Créer le header et le footer → HTML + SCSS de la page legal_notice</td>
     </tr>
     <tr>
-        <td class="todo">HTML et SCSS de la page contact</td>
+        <td class="todo"></td>
+        <td class="inprog"></td>
+        <td class="done">HTML et SCSS de la page contact</td>
+    </tr>
+    <tr>
+        <td class="todo"></td>
+        <td class="inprog"></td>
+        <td class="done">HTML et SCSS de la page legal_notice</td>
+    </tr>
+</table>
+
+<!-- SPRNT 3 -->
+### Kaban sprint 3
+<table> 
+  <tr>
+        <th> TO DO </th>
+        <th> IN PROGRESS </th>
+        <th> DONE </th>
+    </tr>
+    <tr>
+        <td class="todo"></td>
+        <td class="inprog">Créer HTML+SCSS de la partie accueil de la page index</td>
+        <td class="done"></td>
+    </tr>
+    <tr>
+        <td class="todo">Créer HTML+SCSS de la partie CV de la page index</td>
         <td class="inprog"></td>
         <td class="done"></td>
     </tr>
     <tr>
-        <td class="todo">HTML et SCSS de la page legal_notice</td>
+        <td class="todo">Créer HTML+SCSS de la partie réalisation de la page index</td>
         <td class="inprog"></td>
         <td class="done"></td>
     </tr>
