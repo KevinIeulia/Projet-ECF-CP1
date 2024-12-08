@@ -57,6 +57,36 @@
         <td>- Créer le projet IEULIA KEVIN ECF - CP1 sur Github, créer un kanban sur Github project<br> - Créer le HTML et le SCSS pour le header et le footer des pages index, Contact et legal_notices<br>MAJ du HTML et SCSS de la page contact<br>MAJ du HTML et SCSS de la page legal_notice</td>
         <td>I.K</td>
         <td>24 pts</td>
+        <td class="ok"></td>
+    </tr>
+</table>
+<table> 
+    <tr>
+        <th colspan="2">BACKLOG SPRINT 2</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>RAS</td>
+    </tr>
+</table>
+
+<!-- SPRINT 3 -->
+<table> 
+    <tr>
+        <th colspan="5"> SPRINT 3 durée ?? - date 08/12/2024 </th>
+    </tr>        
+    <tr>
+        <th class="titre"> OBJECTIF DU SPRINT </th>
+        <th class="titre"> TACHES </th>
+        <th class="titre"> RESPONSABLE </th>
+        <th class="titre"> ESTIMATION DE POINTS </th>
+        <th class="titre"> ÉTAT </th>
+    </tr>
+    <tr>
+        <td>- Faire HTML et SCSS de la page index</td>
+        <td>- Créer HTML+SCSS de la partie accueil de la page index <br> - Créer HTML+SCSS de la partie CV de la page index<br>- Créer HTML+SCSS de la partie réalisation de la page index</td>
+        <td>I.K</td>
+        <td>24 pts</td>
         <td class="not_ok"></td>
     </tr>
 </table>
@@ -66,11 +96,6 @@
     </tr>
     <tr>
         <td>1</td>
-        <td>xxxx</td>
+        <td>RAS</td>
     </tr>
-    <tr>
-        <td>2</td>
-        <td>xxx</td>
-    </tr>
-
 </table>

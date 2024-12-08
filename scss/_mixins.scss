@@ -16,14 +16,16 @@
 @mixin footer_bottom2 {
     margin-top: auto;
 }
-
-//Background transparent , fond des zone principal
-@mixin bg_zone_fade {
+@mixin flex_center{
     @extend %d_flex;
     @extend %it_center;
     @extend %flex_column;
-    @extend %text_bone;
     @extend %margin_auto;
+}
+//Background transparent , fond des zone principal
+@mixin bg_zone_fade {
+    @include flex_center;
+    @extend %text_bone;
     background-color: $Bone_fade2;
     border-radius: 1em;
     margin-top: 3em;
