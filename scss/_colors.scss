@@ -33,6 +33,9 @@ $cv_bronze2 : #b37f56;
 
 $BlueGreenGradient1 : linear-gradient(90deg, black, $BlueBlack,$CadetBlue,$Rain,$Greenery);
 $BlueGreenGradient2 : linear-gradient(90deg, $BlueBlack 30%,$CadetBlue 50%,$Rain 70%,$Greenery 100%);
+$BlueGreenGradient3 : linear-gradient(90deg, black 30%, $BlueBlack 45%,$CadetBlue 55%,$Rain 65%,$transparent 100%);
+$BlueGreenGradient4 : linear-gradient(270deg, black 30%, $BlueBlack 45%,$CadetBlue 55%,$Rain 65%,$transparent 100%);
+
 $BoneGradient1 : linear-gradient(90deg, $transparent 0%,$Bone 45%,$Bone 55%,$transparent 100%);
 $BronzeGradient : linear-gradient(90deg, $cv_bronze 0%,$cv_bronze2 100%);
 
