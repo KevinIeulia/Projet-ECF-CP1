@@ -29,7 +29,7 @@ développer pour le projet.
         <td>P0</td><!-- ID -->
         <td>Création gestion de projet : kaban, user story, sprint</td><!-- FONCTIONNALITÉ -->
         <td>Haute</td><!-- PRIORITÉ -->
-        <td>En cours</td><!-- STATUS -->
+        <td>Terminé</td><!-- STATUS -->
         <td>8</td><!-- ESTIMATION (POINTS) -->
         <td>I.K</td><!-- RESPONSABLE -->
     </tr>
@@ -37,7 +37,7 @@ développer pour le projet.
         <td>P1</td><!-- ID -->
         <td>Création documentation : readme, issues, pseudo-code, use-ai, prototypes, wireframe</td><!-- FONCTIONNALITÉ -->
         <td>Haute</td><!-- PRIORITÉ -->
-        <td>En cours</td><!-- STATUS -->
+        <td>Terminé</td><!-- STATUS -->
         <td>8</td><!-- ESTIMATION (POINTS) -->
         <td>I.K</td><!-- RESPONSABLE -->
     </tr>
@@ -53,7 +53,7 @@ développer pour le projet.
         <td>P3</td><!-- ID -->
         <td>HTML + SCSS Header et Footer</td><!-- FONCTIONNALITÉ -->
         <td>Haute</td><!-- PRIORITÉ -->
-        <td>À faire</td><!-- STATUS -->
+        <td>Terminé</td><!-- STATUS -->
         <td>10</td><!-- ESTIMATION (POINTS) -->
         <td>I.K</td><!-- RESPONSABLE -->
     </tr>
@@ -61,7 +61,7 @@ développer pour le projet.
         <td>P4</td><!-- ID -->
         <td>HTML + SCSS page mentions légales</td><!-- FONCTIONNALITÉ -->
         <td>Haute</td><!-- PRIORITÉ -->
-        <td>À faire</td><!-- STATUS -->
+        <td>Terminé</td><!-- STATUS -->
         <td>6</td><!-- ESTIMATION (POINTS) -->
         <td>I.K</td><!-- RESPONSABLE -->
     </tr>
@@ -69,7 +69,7 @@ développer pour le projet.
         <td>P5</td><!-- ID -->
         <td>HTML + SCSS page contact</td><!-- FONCTIONNALITÉ -->
         <td>Haute</td><!-- PRIORITÉ -->
-        <td>À faire</td><!-- STATUS -->
+        <td>Terminé</td><!-- STATUS -->
         <td>8</td><!-- ESTIMATION (POINTS) -->
         <td>I.K</td><!-- RESPONSABLE -->
     </tr>
@@ -77,7 +77,7 @@ développer pour le projet.
         <td>P6</td><!-- ID -->
         <td>HTML + SCSS partie accueil de la page d'accueil</td><!-- FONCTIONNALITÉ -->
         <td>Haute</td><!-- PRIORITÉ -->
-        <td>À faire</td><!-- STATUS -->
+        <td>Terminé</td><!-- STATUS -->
         <td>6</td><!-- ESTIMATION (POINTS) -->
         <td>I.K</td><!-- RESPONSABLE -->
     </tr>
@@ -85,7 +85,7 @@ développer pour le projet.
         <td>P7</td><!-- ID -->
         <td>HTML + SCSS partie CV de la page d'accueil</td><!-- FONCTIONNALITÉ -->
         <td>Haute</td><!-- PRIORITÉ -->
-        <td>À faire</td><!-- STATUS -->
+        <td>Terminé</td><!-- STATUS -->
         <td>12</td><!-- ESTIMATION (POINTS) -->
         <td>I.K</td><!-- RESPONSABLE -->
     </tr>
@@ -93,7 +93,7 @@ développer pour le projet.
         <td>P8</td><!-- ID -->
         <td>HTML + SCSS partie réalisation de la page d'accueil</td><!-- FONCTIONNALITÉ -->
         <td>Haute</td><!-- PRIORITÉ -->
-        <td>À faire</td><!-- STATUS -->
+        <td>Terminé</td><!-- STATUS -->
         <td>12</td><!-- ESTIMATION (POINTS) -->
         <td>I.K</td><!-- RESPONSABLE -->
     </tr>
@@ -101,20 +101,12 @@ développer pour le projet.
         <td>P8</td><!-- ID -->
         <td>HTML + SCSS partie réalisation de la page d'accueil</td><!-- FONCTIONNALITÉ -->
         <td>Haute</td><!-- PRIORITÉ -->
-        <td>À faire</td><!-- STATUS -->
+        <td>Terminé</td><!-- STATUS -->
         <td>12</td><!-- ESTIMATION (POINTS) -->
         <td>I.K</td><!-- RESPONSABLE -->
     </tr>
     <tr>
         <td>P9</td><!-- ID -->
-        <td>JS menu dynamique de la page d'accueil</td><!-- FONCTIONNALITÉ -->
-        <td>Haute</td><!-- PRIORITÉ -->
-        <td>À faire</td><!-- STATUS -->
-        <td>10</td><!-- ESTIMATION (POINTS) -->
-        <td>I.K</td><!-- RESPONSABLE -->
-    </tr>
-    <tr>
-        <td>P10</td><!-- ID -->
         <td>JS verification des données du formulaire de contact</td><!-- FONCTIONNALITÉ -->
         <td>Haute</td><!-- PRIORITÉ -->
         <td>À faire</td><!-- STATUS -->
@@ -122,8 +114,16 @@ développer pour le projet.
         <td>I.K</td><!-- RESPONSABLE -->
     </tr>
     <tr>
+        <td>P10</td><!-- ID -->
+        <td>JS menu dynamique de la page d'accueil</td><!-- FONCTIONNALITÉ -->
+        <td>Haute</td><!-- PRIORITÉ -->
+        <td>À faire</td><!-- STATUS -->
+        <td>10</td><!-- ESTIMATION (POINTS) -->
+        <td>I.K</td><!-- RESPONSABLE -->
+    </tr>
+    <tr>
         <td>P11</td><!-- ID -->
-        <td>JS Ajout d'animation </td><!-- FONCTIONNALITÉ -->
+        <td>Créer le JS pour ajouter des animationsn </td><!-- FONCTIONNALITÉ -->
         <td>Haute</td><!-- PRIORITÉ -->
         <td>À faire</td><!-- STATUS -->
         <td>8</td><!-- ESTIMATION (POINTS) -->
@@ -131,7 +131,7 @@ développer pour le projet.
     </tr>
     <tr>
         <td>P12</td><!-- ID -->
-        <td>optionnel essayer d'utiliser vue.js et creer profil dark/light</td><!-- FONCTIONNALITÉ -->
+        <td>Vérifier accessibilité</td><!-- FONCTIONNALITÉ -->
         <td>Haute</td><!-- PRIORITÉ -->
         <td>À faire</td><!-- STATUS -->
         <td>??</td><!-- ESTIMATION (POINTS) -->
@@ -139,6 +139,14 @@ développer pour le projet.
     </tr>
     <tr>
         <td>P13</td><!-- ID -->
+        <td>optionnel essayer d'utiliser vue.js et creer profil dark/light</td><!-- FONCTIONNALITÉ -->
+        <td>Haute</td><!-- PRIORITÉ -->
+        <td>À faire</td><!-- STATUS -->
+        <td>??</td><!-- ESTIMATION (POINTS) -->
+        <td>I.K</td><!-- RESPONSABLE -->
+    </tr>
+    <tr>
+        <td>P14</td><!-- ID -->
         <td>MAJ documentation , nettoyge fichier/ressource non utilisé</td><!-- FONCTIONNALITÉ -->
         <td>Haute</td><!-- PRIORITÉ -->
         <td>À faire</td><!-- STATUS -->

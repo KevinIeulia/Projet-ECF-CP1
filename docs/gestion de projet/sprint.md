@@ -87,15 +87,47 @@
         <td>- Créer HTML+SCSS de la partie accueil de la page index <br> - Créer HTML+SCSS de la partie CV de la page index<br>- Créer HTML+SCSS de la partie réalisation de la page index</td>
         <td>I.K</td>
         <td>24 pts</td>
-        <td class="not_ok"></td>
+        <td class="ok"></td>
     </tr>
 </table>
 <table> 
     <tr>
-        <th colspan="2">BACKLOG SPRINT 2</th>
+        <th colspan="2">BACKLOG SPRINT 3</th>
     </tr>
     <tr>
         <td>1</td>
-        <td>RAS</td>
+        <td>il faudrat ajouter plus de réalisation</td>
+        <td>il faudrat s'occuper de la photo accueil + cv</td>
+    </tr>
+</table>
+
+<!-- SPRINT 4 -->
+<table> 
+    <tr>
+        <th colspan="5"> SPRINT 4 durée ?? - date 08/12/2024 </th>
+    </tr>        
+    <tr>
+        <th class="titre"> OBJECTIF DU SPRINT </th>
+        <th class="titre"> TACHES </th>
+        <th class="titre"> RESPONSABLE </th>
+        <th class="titre"> ESTIMATION DE POINTS </th>
+        <th class="titre"> ÉTAT </th>
+    </tr>
+    <tr>
+        <td>- Réaliser le JavaScript</td>
+        <td>- Créer le JS de verification des données du formulaire de contact<br> - Créer le JS pour le menu dynamique de la page index<br>- Créer le JS pour ajouter des animations</td>
+        <td>I.K</td>
+        <td>24 pts</td>
+        <td class="ok"></td>
+    </tr>
+</table>
+<table> 
+    <tr>
+        <th colspan="2">BACKLOG SPRINT 4</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>il faudrat ajouter plus de réalisation</td>
+        <td>il faudrat s'occuper de la photo accueil + cv</td>
     </tr>
 </table>
