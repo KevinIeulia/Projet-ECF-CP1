@@ -32,22 +32,17 @@
     <tr>
         <td>1</td>
         <td colspan="2">le CV doit etre proche d'un véritable et contenir une quantité raisonable d'information</td>
-        <td class="not_ok"></td>
+        <td class="ok"></td>
     </tr>
     <tr>
         <td>2</td>
         <td colspan="2">le CV doit contenir une petite phrase d'accroche, une partie compétence, une partie expérience, une partie diplome et peut-être une photo</td>
-        <td class="not_ok"></td>
+        <td class="ok"></td>
     </tr>
     <tr>
         <td>3</td>
         <td colspan="2">le CV doit mettre en avant les compétences</td>
-        <td class="not_ok"></td>
-    </tr>
-    <tr>
-        <td>4</td>
-        <td colspan="2">xxxxxxxxxxxxxxxx</td>
-        <td class="not_ok"></td>
+        <td class="ok"></td>
     </tr>
 </table>
 
@@ -85,11 +80,6 @@
     <tr>
         <td>3</td>
         <td colspan="2">Si les deux, mettre en avant les meilleurs projets</td>
-        <td class="not_ok"></td>
-    </tr>
-    <tr>
-        <td>4</td>
-        <td colspan="2">xxxxxxxxxxxxxxxx</td>
         <td class="not_ok"></td>
     </tr>
 </table>

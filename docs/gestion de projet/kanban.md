@@ -106,7 +106,32 @@
     </tr>
     <tr>
         <td class="todo"></td>
-        <td class="inprog">Créer HTML+SCSS de la partie réalisation de la page index</td>
+        <td class="inprog"></td>
+        <td class="done">Créer HTML+SCSS de la partie réalisation de la page index</td>
+    </tr>
+</table>
+
+<!-- SPRNT 4 -->
+### Kaban sprint 4
+<table> 
+  <tr>
+        <th> TO DO </th>
+        <th> IN PROGRESS </th>
+        <th> DONE </th>
+    </tr>
+    <tr>
+        <td class="todo"></td>
+        <td class="inprog"></td>
+        <td class="done">Créer le JS de verification des données du formulaire de contact</td>
+    </tr>
+    <tr>
+        <td class="todo"></td>
+        <td class="inprog">Créer le JS pour le menu dynamique de la page index</td>
+        <td class="done"></td>
+    </tr>
+    <tr>
+        <td class="todo">Créer le JS pour ajouter des animations</td>
+        <td class="inprog"></td>
         <td class="done"></td>
     </tr>
 </table>
