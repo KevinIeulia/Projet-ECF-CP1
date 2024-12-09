@@ -16,12 +16,22 @@
 @mixin footer_bottom2 {
     margin-top: auto;
 }
-@mixin flex_center{
+
+//flex center row
+@mixin flex_center_row {
+    @extend %d_flex;
+    @extend %justify_center;
+    @extend %it_center;
+}
+
+//flex center colmun
+@mixin flex_center {
     @extend %d_flex;
     @extend %it_center;
     @extend %flex_column;
     @extend %margin_auto;
 }
+
 //Background transparent , fond des zone principal
 @mixin bg_zone_fade {
     @include flex_center;
@@ -41,6 +51,16 @@
     border-radius: 1em;
     background-color: $BlueBlack;
     height: 100%;
+}
+
+// Bronze round for CV
+@mixin bg_cv_bronze {
+    @extend %bg_cv_bronze_gradient;
+    width: 2em;
+    height: 2em;
+    margin: 0.1em 0.4em;
+    border-radius: 20em;
+    font-size: 1em;
 }
 
 
