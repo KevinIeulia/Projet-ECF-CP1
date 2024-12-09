@@ -96,17 +96,17 @@
     </tr>
     <tr>
         <td class="todo"></td>
-        <td class="inprog">Créer HTML+SCSS de la partie accueil de la page index</td>
-        <td class="done"></td>
+        <td class="inprog"></td>
+        <td class="done">Créer HTML+SCSS de la partie accueil de la page index</td>
     </tr>
     <tr>
-        <td class="todo">Créer HTML+SCSS de la partie CV de la page index</td>
+        <td class="todo"></td>
         <td class="inprog"></td>
-        <td class="done"></td>
+        <td class="done">Créer HTML+SCSS de la partie CV de la page index</td>
     </tr>
     <tr>
-        <td class="todo">Créer HTML+SCSS de la partie réalisation de la page index</td>
-        <td class="inprog"></td>
+        <td class="todo"></td>
+        <td class="inprog">Créer HTML+SCSS de la partie réalisation de la page index</td>
         <td class="done"></td>
     </tr>
 </table>
