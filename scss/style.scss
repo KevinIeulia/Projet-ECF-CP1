@@ -61,7 +61,6 @@ header {
 
         .nav_link {
             @extend %w70;
-
             a {
                 @extend %link_fix;
                 @extend %text_bone;
