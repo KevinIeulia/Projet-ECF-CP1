@@ -20,6 +20,24 @@ body {
     }
 }
 
+// RAVEN ANIME 
+@keyframes right_to_left { 
+    from { transform: translateX(0%) } 
+    to { transform: translateX(-600%) translateY(100%) }  
+    }
+@keyframes cycle { 
+    0%  { transform: translate(0%, 0%) scaleY(-1)} 
+    50% { transform: translate(-600%, 100%) }
+    51% { transform: translate(-600%, 100%) scale(-1)}
+    100% { transform: translate(0%, 200%) scaleX(-1) }  
+    }
+#raven{
+        position: absolute;
+        top: 2em;
+        left : 70%;
+        animation: cycle 10s linear 2s 1 ;
+        animation: name duration timing-function delay iteration-count direction fill-mode;
+    }
 // HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER 
 header {
     @extend %text_center;
@@ -285,8 +303,9 @@ main {
                         @include flex_center;
 
                         h4 {
-                            @extend %bg_cv_grey;
+                            background: $DarkGreyBorderBronzeGradient;
                             @extend %title_font;
+                            border: 2px solid transparent;
                             border-radius: 1em;
                             padding: 0.2em 0.5em;
                             text-align: center;
@@ -294,6 +313,7 @@ main {
 
                         span {
                             font-style: italic;
+                            margin-bottom: .6em;
                         }
                     }
                 }
@@ -314,12 +334,19 @@ main {
             padding: .2em 1em;
             border-radius: .2em
         }
+        h2:hover{
+            cursor: pointer;
+        }
         p {
                 @extend %text_font2;
                 @include flex_center_row;
                 padding: 1em;
                 text-align: justify;
+                margin-bottom: 0;
             }
+        .real_card_img{
+            @include flex_center_row;
+        }
         .realisation_card_left{
             h2 {
                 background: $BlueGreenGradient3;
@@ -492,6 +519,12 @@ footer {
 // MEDIA QUERY MAXIMUM SM 576px
 @include breakpointMax($size: sm) {
 
+    //RAVEN
+    
+    #raven{
+        display: none;
+        
+    }
     // HEADER
     header {
         .logo_site_max {
@@ -526,9 +559,30 @@ footer {
     }
 
     // >> EXPERIENCE
+    .cv_exp_title{
+        margin: .5em .2em;
+        padding: .5em;
+        background: black;
+        border-radius: .5em;
+        // text-align: center;
+    }
     .cv_exp_card {
         background-color: $cv_grey;
         border-radius: 1em;
+        .cv_exp_card_date{
+            margin-top: .3em;
+        }
+        .cv_exp_card_content{
+            h4{
+                background: $DarkGreyBorderBronzeGradient !important;
+            }
+            span, ul{
+                text-align: left;
+            }
+            span{
+                margin: .5em 0;
+            }
+        }
     }
 
     // MAIN PAGE INDEX SECTION REALISATIONS
@@ -543,7 +597,9 @@ footer {
 
 // MEDIA QUERY MAXIMUM MD 768px
 @include breakpointMax($size: md) {
-
+    #raven{
+        display: none;
+    }
     // HEADER
     header {
         .logo_site_max {
@@ -648,4 +704,17 @@ footer {
             }
         }
     }
+}
+
+@include breakpointMin($size: lg){
+    .bg_cv_comp{
+         ul{
+            margin-top: 1em;
+            margin-bottom: 2em;
+        }
+        li{
+            margin: .4em;
+        }
+    }
+
 }

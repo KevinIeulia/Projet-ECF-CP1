@@ -126,12 +126,12 @@
     </tr>
     <tr>
         <td class="todo"></td>
-        <td class="inprog">Créer le JS pour le menu dynamique de la page index</td>
-        <td class="done"></td>
+        <td class="inprog"></td>
+        <td class="done">Créer le JS pour le menu dynamique de la page index</td>
     </tr>
     <tr>
-        <td class="todo">Créer le JS pour ajouter des animations</td>
-        <td class="inprog"></td>
+        <td class="todo"></td>
+        <td class="inprog">Créer le JS pour ajouter des animations</td>
         <td class="done"></td>
     </tr>
 </table>

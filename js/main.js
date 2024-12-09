@@ -170,11 +170,22 @@ function menuDynamique() {
 }
 menuDynamique()
 
-
-
-
-
-
-
-
 l("menu dynamique ok!")
+
+
+
+//JQUERY ANIMATION
+$(document).ready(function () {
+    console.log("Le DOM est prêt !");
+});
+
+if (select("#main_index")){
+    
+    $("#section_realisation h2").next("div").slideUp(0);
+    $("#section_realisation h2").click(function () {
+        $(this).next("div").slideToggle(1000);
+    });
+
+}
+
+

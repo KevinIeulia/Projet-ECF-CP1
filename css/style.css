@@ -34,19 +34,19 @@ footer .footer_link, #main_contact .form_style form .form_btn .btn_form {
   background: linear-gradient(90deg, #69462b 0%, #b37f56 100%);
 }
 
-#main_index #section_CV .cv_section_body .bg_cv_exp .cv_exp_card .cv_exp_card_content h4, #main_index #section_CV .cv_section_body .bg_cv_comp article, #main_index #section_CV header .bg_cv_frame {
+#main_index #section_CV .cv_section_body .bg_cv_comp article, #main_index #section_CV header .bg_cv_frame {
   background-color: #303033;
 }
 
-#main_LegNot .article_style, #main_contact .form_style, #main_index #section_realisation p, #main_index #section_CV .cv_section_body .bg_cv_exp .cv_exp_card .cv_exp_card_content, #main_index #section_CV .cv_section_body .bg_cv_exp .cv_exp_card .cv_exp_card_date, #main_index #section_CV .cv_section_body .bg_cv_exp .cv_exp_title span, #main_index #section_CV .cv_section_body .bg_cv_exp .cv_exp_title, #main_index #section_CV .cv_section_body .bg_cv_comp article div span, #main_index #section_CV .cv_section_body .bg_cv_comp article div, #main_index #section_CV header, #main_index #section_CV, #main_index #section_accueil article, main .bg_zone_fade, header nav .nav_logo, header nav {
+#main_LegNot .article_style, #main_contact .form_style, #main_index #section_realisation .real_card_img, #main_index #section_realisation p, #main_index #section_CV .cv_section_body .bg_cv_exp .cv_exp_card .cv_exp_card_content, #main_index #section_CV .cv_section_body .bg_cv_exp .cv_exp_card .cv_exp_card_date, #main_index #section_CV .cv_section_body .bg_cv_exp .cv_exp_title span, #main_index #section_CV .cv_section_body .bg_cv_exp .cv_exp_title, #main_index #section_CV .cv_section_body .bg_cv_comp article div span, #main_index #section_CV .cv_section_body .bg_cv_comp article div, #main_index #section_CV header, #main_index #section_CV, #main_index #section_accueil article, main .bg_zone_fade, header nav .nav_logo, header nav {
   display: flex;
 }
 
-#main_LegNot .article_style, #main_contact .form_style, #main_index #section_realisation p, #main_index #section_CV .cv_section_body .bg_cv_exp .cv_exp_card .cv_exp_card_content, #main_index #section_CV .cv_section_body .bg_cv_exp .cv_exp_card .cv_exp_card_date, #main_index #section_CV .cv_section_body .bg_cv_exp .cv_exp_title span, #main_index #section_CV .cv_section_body .bg_cv_comp article div span, #main_index #section_accueil article, main .bg_zone_fade, header nav .nav_logo, header nav {
+#main_LegNot .article_style, #main_contact .form_style, #main_index #section_realisation .real_card_img, #main_index #section_realisation p, #main_index #section_CV .cv_section_body .bg_cv_exp .cv_exp_card .cv_exp_card_content, #main_index #section_CV .cv_section_body .bg_cv_exp .cv_exp_card .cv_exp_card_date, #main_index #section_CV .cv_section_body .bg_cv_exp .cv_exp_title span, #main_index #section_CV .cv_section_body .bg_cv_comp article div span, #main_index #section_accueil article, main .bg_zone_fade, header nav .nav_logo, header nav {
   align-items: center;
 }
 
-#main_index #section_realisation p, #main_index #section_CV .cv_section_body .bg_cv_exp .cv_exp_card .cv_exp_card_date, #main_index #section_CV .cv_section_body .bg_cv_exp .cv_exp_title span, #main_index #section_CV .cv_section_body .bg_cv_comp article div span {
+#main_index #section_realisation .real_card_img, #main_index #section_realisation p, #main_index #section_CV .cv_section_body .bg_cv_exp .cv_exp_card .cv_exp_card_date, #main_index #section_CV .cv_section_body .bg_cv_exp .cv_exp_title span, #main_index #section_CV .cv_section_body .bg_cv_comp article div span {
   justify-content: center;
 }
 
@@ -121,6 +121,36 @@ body {
 }
 body .d_none {
   display: none !important;
+}
+
+@keyframes right_to_left {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-600%) translateY(100%);
+  }
+}
+@keyframes cycle {
+  0% {
+    transform: translate(0%, 0%) scaleY(-1);
+  }
+  50% {
+    transform: translate(-600%, 100%);
+  }
+  51% {
+    transform: translate(-600%, 100%) scale(-1);
+  }
+  100% {
+    transform: translate(0%, 200%) scaleX(-1);
+  }
+}
+#raven {
+  position: absolute;
+  top: 2em;
+  left: 70%;
+  animation: cycle 10s linear 2s 1;
+  animation: name duration timing-function delay iteration-count direction fill-mode;
 }
 
 header .logo_site_max {
@@ -265,20 +295,27 @@ main .bg_zone_fade {
   margin-bottom: 1em;
 }
 #main_index #section_CV .cv_section_body .bg_cv_exp .cv_exp_card .cv_exp_card_content h4 {
+  background: linear-gradient(90deg, #212122, #212122) padding-box, linear-gradient(90deg, #69462b 0%, #b37f56 100%) border-box;
+  border: 2px solid transparent;
   border-radius: 1em;
   padding: 0.2em 0.5em;
   text-align: center;
 }
 #main_index #section_CV .cv_section_body .bg_cv_exp .cv_exp_card .cv_exp_card_content span {
   font-style: italic;
+  margin-bottom: 0.6em;
 }
 #main_index #section_realisation h2 {
   padding: 0.2em 1em;
   border-radius: 0.2em;
 }
+#main_index #section_realisation h2:hover {
+  cursor: pointer;
+}
 #main_index #section_realisation p {
   padding: 1em;
   text-align: justify;
+  margin-bottom: 0;
 }
 #main_index #section_realisation .realisation_card_left h2 {
   background: linear-gradient(90deg, black 30%, #021C1E 45%, #004445 55%, #2C7873 65%, rgba(0, 0, 0, 0) 100%);
@@ -396,6 +433,9 @@ footer .f_link_right {
   }
 }
 @media (max-width: 576px) {
+  #raven {
+    display: none;
+  }
   header .logo_site_max {
     display: none;
   }
@@ -413,15 +453,36 @@ footer .f_link_right {
   .bg_cv_comp article {
     border-radius: 1em;
   }
+  .cv_exp_title {
+    margin: 0.5em 0.2em;
+    padding: 0.5em;
+    background: black;
+    border-radius: 0.5em;
+  }
   .cv_exp_card {
     background-color: #303033;
     border-radius: 1em;
+  }
+  .cv_exp_card .cv_exp_card_date {
+    margin-top: 0.3em;
+  }
+  .cv_exp_card .cv_exp_card_content h4 {
+    background: linear-gradient(90deg, #212122, #212122) padding-box, linear-gradient(90deg, #69462b 0%, #b37f56 100%) border-box !important;
+  }
+  .cv_exp_card .cv_exp_card_content span, .cv_exp_card .cv_exp_card_content ul {
+    text-align: left;
+  }
+  .cv_exp_card .cv_exp_card_content span {
+    margin: 0.5em 0;
   }
   #section_realisation h2 {
     text-align: center;
   }
 }
 @media (max-width: 768px) {
+  #raven {
+    display: none;
+  }
   header .logo_site_max {
     max-width: 20em;
   }
@@ -485,5 +546,14 @@ footer .f_link_right {
     border-right: none;
     border-top: #b37f56 2px solid;
     border-bottom: #b37f56 2px solid;
+  }
+}
+@media (min-width: 992px) {
+  .bg_cv_comp ul {
+    margin-top: 1em;
+    margin-bottom: 2em;
+  }
+  .bg_cv_comp li {
+    margin: 0.4em;
   }
 }/*# sourceMappingURL=style.css.map */
