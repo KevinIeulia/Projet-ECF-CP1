@@ -538,6 +538,9 @@ footer .f_link_right {
   #section_realisation h2 {
     text-align: center;
   }
+  #main_contact legend {
+    font-size: 0.8em;
+  }
 }
 @media (max-width: 768px) {
   #raven {
