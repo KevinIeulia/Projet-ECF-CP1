@@ -131,7 +131,32 @@
     </tr>
     <tr>
         <td class="todo"></td>
-        <td class="inprog">Créer le JS pour ajouter des animations</td>
+        <td class="inprog"></td>
+        <td class="done">Créer le JS pour ajouter des animations</td>
+    </tr>
+</table>
+
+<!-- SPRNT 5 -->
+### Kaban sprint 5
+<table> 
+  <tr>
+        <th> TO DO </th>
+        <th> IN PROGRESS </th>
+        <th> DONE </th>
+    </tr>
+    <tr>
+        <td class="todo">Vérifier ce qui pourrait améliorer l'accéssibilté aria label ect...</td>
+        <td class="inprog"></td>
+        <td class="done"></td>
+    </tr>
+    <tr>
+        <td class="todo">mettre à jour la documentation</td>
+        <td class="inprog"></td>
+        <td class="done"></td>
+    </tr>
+    <tr>
+        <td class="todo">supprimer ce qui n'a pas été utilisé</td>
+        <td class="inprog"></td>
         <td class="done"></td>
     </tr>
 </table>

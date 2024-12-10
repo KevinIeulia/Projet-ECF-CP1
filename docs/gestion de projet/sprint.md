@@ -97,6 +97,9 @@
     <tr>
         <td>1</td>
         <td>il faudrat ajouter plus de réalisation</td>
+    </tr>
+    <tr>
+        <td>2</td>
         <td>il faudrat s'occuper de la photo accueil + cv</td>
     </tr>
 </table>
@@ -127,7 +130,44 @@
     </tr>
     <tr>
         <td>1</td>
-        <td>il faudrat ajouter plus de réalisation</td>
-        <td>il faudrat s'occuper de la photo accueil + cv</td>
+        <td>ok tout fonctionne</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>vérifier s'il y a un interet ou pas a utiliser les liens direct sur page index pour les menus dynamique ou si le menu dynamique avec la fonction ciblant l'url suffit</td>
+    </tr>
+</table>
+
+<!-- SPRINT 5 -->
+<table> 
+    <tr>
+        <th colspan="5"> SPRINT 5 durée ?? - date 08/12/2024 </th>
+    </tr>        
+    <tr>
+        <th class="titre"> OBJECTIF DU SPRINT </th>
+        <th class="titre"> TACHES </th>
+        <th class="titre"> RESPONSABLE </th>
+        <th class="titre"> ESTIMATION DE POINTS </th>
+        <th class="titre"> ÉTAT </th>
+    </tr>
+    <tr>
+        <td>- Vérifier accessibilité<br> -MAJ documentation , nettoyge fichier/ressource non utilisé</td>
+        <td>- Vérifier ce qui pourrait améliorer l'accéssibilté aria label ect...<br> - mettre à jour la documentation et supprimer ce qui n'a pas été utilisé</td>
+        <td>I.K</td>
+        <td>24 pts</td>
+        <td class="not_ok"></td>
+    </tr>
+</table>
+<table> 
+    <tr>
+        <th colspan="2">BACKLOG SPRINT 5</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>xxx</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>xxx</td>
     </tr>
 </table>

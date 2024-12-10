@@ -108,7 +108,7 @@
     <tr>
         <td>1</td>
         <td colspan="2">Email au format valide.</td>
-        <td class="not_ok"></td>
+        <td class="ok"></td>
     </tr>
     <tr>
         <td>2</td>
@@ -118,11 +118,11 @@
     <tr>
         <td>3</td>
         <td colspan="2">Champ "Nom" : Max 50 caractères.</td>
-        <td class="not_ok"></td>
+        <td class="ok"></td>
     </tr>
     <tr>
         <td>4</td>
         <td colspan="2">Champ "Prénom" : Max 20 caractères.</td>
-        <td class="not_ok"></td>
+        <td class="ok"></td>
     </tr>
 </table>
