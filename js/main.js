@@ -44,52 +44,43 @@ function addClass(item, classe) {
 function removeClass(item, classe) {
     select(item).classList.remove(classe);
 }
-function verifRemoveClass(item, classe) {
-    if (verifClass(item, classe)) {
-        removeClass(item, classe);
-    }
-}
-function verifAddClass(item, classe) {
-    if (!verifClass(item, classe)) {
-        addClass(item, classe);
-    }
-}
+
 //FONCTION CHANGE URL
 function changeURL(newPath) {
     window.history.pushState({}, "", newPath);
 }
-
-
-
+//FONCTION BOUTON TARGET DNONE
+function btnTargetDnone(btn, target) {
+    select(btn).onclick = function () {
+        select(target).style.display = "none";
+    }
+}
+//FONCTION DISPLAY BLOCK DNONE
+function displayBlockDnone(block, dnone1, dnone2) {
+    removeClass(block, "d_none");
+    addClass(dnone1, "d_none");
+    addClass(dnone2, "d_none");
+}
 // JS PROJET PORTFOLIO
 
 // 1-PAGE CONTACT Vérification des champs
 
-//Regex pour la validation des champs
 
 l("démarage js portfolio");
 l("js page contact validation des champs");
 
-const regexNom = /^[^\s]{1,50}$/;
-const regexPrenom = /^[^\s]{1,20}$/;
-const regexEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-const regexMessage = /^(?!\s*$).+/;
 
-// Formulaire de contact Vérification des champs 
+// Formulaire de contact Vérification des champs page contact
 
 if (select("#main_contact")) {
-    //pour effacer ce qui est écrit dans le formulaire a chaque lancement js
-    selectAll("fieldset>input, textarea").forEach(element => {
+    //Regex pour la validation des champs
+    const regexNom = /^.{1,50}$/;
+    const regexPrenom = /^.{1,20}$/;
+    const regexEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    const regexMessage = /^.+/;
+    //pour effacer ce qui est écrit dans le formulaire a chaque chargement de la page
+    selectAll("fieldset>input, textarea, #form_confirm").forEach(element => {
         element.value = "";
-    })
-
-    //pour effacer ce qui est écrit dans le formulaire en cliquant
-    selectAll("fieldset>input, textarea").forEach(element => {
-        element.addEventListener("click", function () {
-            if (element.value != "") {
-                element.value = "";
-            }
-        })
     })
     // Vérif nom
     select("#nom").addEventListener("input", function () {
@@ -109,7 +100,6 @@ if (select("#main_contact")) {
     //Vérif message
     select("#message").addEventListener("input", function () {
         let temp = getValue("#message");
-        l(temp)
         verifChamp(temp, "#valid_message", regexMessage, "Message Valid !", "Message Invalide !")
     })
     //button envoyer formulaire
@@ -132,108 +122,104 @@ if (select("#main_contact")) {
         })
     })
 
-    // Modale du formulaire
-    // Get the modal
-    var formModal = document.getElementById("form_modal");
-
-    // Get the button that opens the modal
-    var submitBtn = document.getElementById("form_submit");
-
-    // Get the <closeModal> element that closes the modal
-    var closeModal = document.getElementsByClassName("form_modal_close")[0];
-
-    // When the user clicks the button, open the modal 
-    submitBtn.onclick = function () {
-        formModal.style.display = "block";
+    // MODALE DU FORMULAIRE
+    // Bouton pour ouvrir la modale et bloquer le submit
+    select("#form_submit").onclick = function () {
+        event.preventDefault()
+        select("#form_modal").style.display = "block";
     }
 
-    // When the user clicks on <closeModal> (x), close the formModal
-    closeModal.onclick = function () {
-        formModal.style.display = "none";
-    }
-
-    // When the user clicks anywhere outside of the formModal, close it
+    // Fermeture de la modal
+    btnTargetDnone("#close_modal", "#form_modal")
+    btnTargetDnone("#form_modal_btn2", "#form_modal")
     window.onclick = function (event) {
-        if (event.target == formModal) {
-            formModal.style.display = "none";
+        if (event.target == select("#form_modal")) {
+            select("#form_modal").style.display = "none";
         }
     }
+    // Modal bouton envoyer, fermeture de la modal, envoi du formulaire, affichage du message ok et effacement des champs 
+    select("#form_modal_btn1").addEventListener("click", function () {
+        select("#form_modal").style.display = "none";
+        removeClass("#form_confirm", "d_none");
+        text("#form_confirm", "Votre message a bien été envoyé !");
+        selectAll("fieldset>input, fieldset>span, textarea").forEach(element => {
+            element.value = "";
+            element.innerHTML = "";
+        });
+        //jquery
+        $(document).ready(function () {
+            $("#form_confirm").fadeIn(500, function () {
+                $(this).delay(2000).fadeOut(1000, function () {
+                    $(this).text("");
+                });
+            });
+        });
+
+    })
 }
 
 l("page contact ok!")
 
 // 2-MENU DYNAMIQUE
 
-//MENU DYNAMIQUE AVEC LES LIENS DE LA PAGE INDEX
 l("js menu dynamique");
-
-if (select("#main_index")) {
+//MENU DYNAMIQUE AVEC LES LIENS DE LA PAGE INDEX
+function menuDynamiqueLink() {
     select("#accueil").addEventListener("click", function () {
-        verifRemoveClass("#section_accueil", "d_none");
-        verifAddClass("#section_CV", "d_none");
-        verifAddClass("#section_realisation", "d_none");
+        displayBlockDnone("#section_accueil", "#section_CV", "#section_realisation");
         changeURL("/index.html?accueil");
     })
     select("#cv").addEventListener("click", function () {
-        verifRemoveClass("#section_CV", "d_none");
-        verifAddClass("#section_accueil", "d_none");
-        verifAddClass("#section_realisation", "d_none");
+        displayBlockDnone("#section_CV", "#section_accueil", "#section_realisation");
         changeURL("/index.html?cv");
     })
     select("#realisation").addEventListener("click", function () {
-        verifRemoveClass("#section_realisation", "d_none");
-        verifAddClass("#section_CV", "d_none");
-        verifAddClass("#section_accueil", "d_none");
+        displayBlockDnone("#section_realisation", "#section_CV", "#section_accueil");
         changeURL("/index.html?realisation");
     })
 }
-
-
-const regexAccueil = /accueil/;
-const regexCv = /cv/;
-const regexRealisation = /realisation/;
-
 //MENU DYNAMIQUE AVEC VERIF URL
-function menuDynamique() {
+function menuDynamiqueUrl() {
+    const regexAccueil = /accueil/;
+    const regexCv = /cv/;
+    const regexRealisation = /realisation/;
     switch (true) {
         case regexAccueil.test(location.href):
-            verifRemoveClass("#section_accueil", "d_none");
-            verifAddClass("#section_CV", "d_none");
-            verifAddClass("#section_realisation", "d_none");
+            displayBlockDnone("#section_accueil", "#section_CV", "#section_realisation");
             break;
         case regexCv.test(location.href):
-            verifRemoveClass("#section_CV", "d_none");
-            verifAddClass("#section_accueil", "d_none");
-            verifAddClass("#section_realisation", "d_none");
+            displayBlockDnone("#section_CV", "#section_accueil", "#section_realisation");
             break;
         case regexRealisation.test(location.href):
-            verifRemoveClass("#section_realisation", "d_none");
-            verifAddClass("#section_CV", "d_none");
-            verifAddClass("#section_accueil", "d_none");
+            displayBlockDnone("#section_realisation", "#section_CV", "#section_accueil");
             break;
-
         default:
             break;
     }
 }
-menuDynamique()
+
+
+
+// EXECUTION DES FONCTIONS PAGE INDEX
+if (select("#main_index")) {
+    menuDynamiqueLink();
+    menuDynamiqueUrl();
+
+    // 3-SLIDE DES RÉALISATIONS
+    // JQUERY ANIMATION slide des réalisations
+    $(document).ready(function () {
+        console.log("Le DOM est prêt !");
+    });
+    $("#section_realisation h2").next("div").slideUp(0);
+    $("#section_realisation h2").click(function () {
+        $(this).next("div").slideToggle(1000);
+    });
+}
 
 l("menu dynamique ok!")
 
 
 
-//JQUERY ANIMATION
 
-if (select("#main_index")) {
-    $(document).ready(function () {
-        console.log("Le DOM est prêt !");
-    });
-
-    $("#section_realisation h2").next("div").slideUp(0);
-    $("#section_realisation h2").click(function () {
-        $(this).next("div").slideToggle(1000);
-    });
-
-}
 
 

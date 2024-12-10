@@ -26,38 +26,6 @@ footer .footer_link a, footer .social_link a, #main_LegNot .article_style, #main
   color: #F8F1E5;
 }
 
-footer .footer_link, #main_contact .class_modal .form_modal_body button, #main_contact .form_style form .form_btn .btn_form {
-  background: linear-gradient(90deg, black, #021c1e, #004445, #2C7873, #6FB98F);
-}
-
-#main_index #section_CV .cv_section_body .bg_cv_exp .cv_exp_title span, #main_index #section_CV .cv_section_body .bg_cv_comp article div span, #main_index #section_CV header article .bg_cv_header {
-  background: linear-gradient(90deg, #69462b 0%, #b37f56 100%);
-}
-
-#main_index #section_CV .cv_section_body .bg_cv_comp article, #main_index #section_CV header .bg_cv_frame {
-  background-color: #303033;
-}
-
-#main_LegNot .article_style, #main_contact .class_modal .form_modal_body, #main_contact .form_style, #main_index #section_realisation .real_card_img, #main_index #section_realisation p, #main_index #section_CV .cv_section_body .bg_cv_exp .cv_exp_card .cv_exp_card_content, #main_index #section_CV .cv_section_body .bg_cv_exp .cv_exp_card .cv_exp_card_date, #main_index #section_CV .cv_section_body .bg_cv_exp .cv_exp_title span, #main_index #section_CV .cv_section_body .bg_cv_exp .cv_exp_title, #main_index #section_CV .cv_section_body .bg_cv_comp article div span, #main_index #section_CV .cv_section_body .bg_cv_comp article div, #main_index #section_CV header, #main_index #section_CV, #main_index #section_accueil article, main .bg_zone_fade, header nav .nav_logo, header nav {
-  display: flex;
-}
-
-#main_LegNot .article_style, #main_contact .class_modal .form_modal_body, #main_contact .form_style, #main_index #section_realisation .real_card_img, #main_index #section_realisation p, #main_index #section_CV .cv_section_body .bg_cv_exp .cv_exp_card .cv_exp_card_content, #main_index #section_CV .cv_section_body .bg_cv_exp .cv_exp_card .cv_exp_card_date, #main_index #section_CV .cv_section_body .bg_cv_exp .cv_exp_title span, #main_index #section_CV .cv_section_body .bg_cv_comp article div span, #main_index #section_accueil article, main .bg_zone_fade, header nav .nav_logo, header nav {
-  align-items: center;
-}
-
-#main_contact .class_modal .form_modal_body, #main_index #section_realisation .real_card_img, #main_index #section_realisation p, #main_index #section_CV .cv_section_body .bg_cv_exp .cv_exp_card .cv_exp_card_date, #main_index #section_CV .cv_section_body .bg_cv_exp .cv_exp_title span, #main_index #section_CV .cv_section_body .bg_cv_comp article div span {
-  justify-content: center;
-}
-
-#main_LegNot .article_style, #main_contact .form_style, #main_index #section_CV .cv_section_body .bg_cv_exp .cv_exp_card .cv_exp_card_content, #main_index #section_CV, #main_index #section_accueil article, main .bg_zone_fade {
-  flex-direction: column;
-}
-
-footer, #main_contact .class_modal .form_modal_header, #main_contact .form_style form .form_btn, #main_index #section_CV header article .bg_cv_header, main h1, header {
-  text-align: center;
-}
-
 footer .footer_link a:hover, main h1 {
   font-weight: bold;
 }
@@ -65,6 +33,43 @@ footer .footer_link a:hover, main h1 {
 footer .footer_link:hover a, header nav .nav_link:hover a {
   transition: 0.2s ease;
   opacity: 0.3;
+}
+
+footer .footer_link, #main_contact .class_modal .form_modal_body button, #main_contact .form_style form .form_btn .btn_form {
+  background: linear-gradient(90deg, black, #021c1e, #004445, #2C7873, #6FB98F);
+}
+
+#main_contact .class_modal .form_modal_header, #main_contact #form_confirm_container #form_confirm, #main_contact .form_style form fieldset legend, #main_index #section_CV .cv_section_body .bg_cv_exp .cv_exp_title span, #main_index #section_CV .cv_section_body .bg_cv_comp article div span, #main_index #section_CV header article .bg_cv_header {
+  background: linear-gradient(90deg, #69462b 0%, #b37f56 100%);
+}
+
+#main_index #section_CV .cv_section_body .bg_cv_comp article, #main_index #section_CV header .bg_cv_frame {
+  background-color: #303033;
+}
+
+#main_LegNot .article_style, #main_contact .class_modal .form_modal_body, #main_contact .class_modal, #main_contact .form_style, #main_index #section_realisation .real_card_img, #main_index #section_realisation p, #main_index #section_CV .cv_section_body .bg_cv_exp .cv_exp_card .cv_exp_card_content, #main_index #section_CV .cv_section_body .bg_cv_exp .cv_exp_card .cv_exp_card_date, #main_index #section_CV .cv_section_body .bg_cv_exp .cv_exp_title span, #main_index #section_CV .cv_section_body .bg_cv_exp .cv_exp_title, #main_index #section_CV .cv_section_body .bg_cv_comp article div span, #main_index #section_CV .cv_section_body .bg_cv_comp article div, #main_index #section_CV header, #main_index #section_CV, #main_index #section_accueil article, main .bg_zone_fade, header nav .nav_logo, header nav {
+  display: flex;
+}
+
+#main_LegNot .article_style, #main_contact .class_modal .form_modal_body, #main_contact .class_modal, #main_contact .form_style, #main_index #section_realisation .real_card_img, #main_index #section_realisation p, #main_index #section_CV .cv_section_body .bg_cv_exp .cv_exp_card .cv_exp_card_content, #main_index #section_CV .cv_section_body .bg_cv_exp .cv_exp_card .cv_exp_card_date, #main_index #section_CV .cv_section_body .bg_cv_exp .cv_exp_title span, #main_index #section_CV .cv_section_body .bg_cv_comp article div span, #main_index #section_accueil article, main .bg_zone_fade, header nav .nav_logo, header nav {
+  align-items: center;
+}
+
+#main_contact .class_modal .form_modal_body, #main_contact .class_modal, #main_index #section_realisation .real_card_img, #main_index #section_realisation p, #main_index #section_CV .cv_section_body .bg_cv_exp .cv_exp_card .cv_exp_card_date, #main_index #section_CV .cv_section_body .bg_cv_exp .cv_exp_title span, #main_index #section_CV .cv_section_body .bg_cv_comp article div span {
+  justify-content: center;
+}
+
+#main_LegNot .article_style, #main_contact .form_style, #main_index #section_CV .cv_section_body .bg_cv_exp .cv_exp_card .cv_exp_card_content, #main_index #section_CV, #main_index #section_accueil article, main .bg_zone_fade {
+  flex-direction: column;
+}
+
+footer, #main_contact .class_modal .form_modal_header, #main_contact #form_confirm_container #form_confirm, #main_contact #form_confirm_container, #main_contact .form_style form .form_btn, #main_contact .form_style form fieldset legend, #main_index #section_CV header article .bg_cv_header, main h1, header {
+  text-align: center;
+}
+
+#main_LegNot .article_style, #main_contact .form_style, #main_index #section_CV .cv_section_body .bg_cv_exp .cv_exp_card .cv_exp_card_content, #main_index #section_CV header article .bg_cv_header .bg_cv_header_titre, #main_index #section_accueil article, main .bg_zone_fade, main h1, main .bg_titre {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 footer .footer_link a, header nav .nav_link a {
@@ -78,7 +83,7 @@ footer .footer_link a, header nav .nav_link a {
   letter-spacing: 0.05em;
 }
 
-#main_contact .class_modal .form_modal_header, #main_index #section_realisation h2, #main_index #section_CV .cv_section_body .bg_cv_exp .cv_exp_card .cv_exp_card_content h4, #main_index #section_CV .cv_section_body .bg_cv_exp .cv_exp_title h3, #main_index #section_CV .cv_section_body .bg_cv_comp article div h3, #main_index #section_CV header article .bg_cv_header .bg_cv_header_titre h2, main h1 {
+#main_contact .class_modal .form_modal_header, #main_contact #form_confirm_container #form_confirm, #main_contact .form_style form fieldset legend, #main_index #section_realisation h2, #main_index #section_CV .cv_section_body .bg_cv_exp .cv_exp_card .cv_exp_card_content h4, #main_index #section_CV .cv_section_body .bg_cv_exp .cv_exp_title h3, #main_index #section_CV .cv_section_body .bg_cv_comp article div h3, #main_index #section_CV header article .bg_cv_header .bg_cv_header_titre h2, main h1 {
   font-family: "COPPERPLATE";
   letter-spacing: 0.05em;
 }
@@ -86,11 +91,6 @@ footer .footer_link a, header nav .nav_link a {
 footer .footer_link a:hover, header nav .nav_link a:hover {
   transition: 1s ease;
   opacity: initial;
-}
-
-#main_LegNot .article_style, #main_contact .form_style, #main_index #section_CV .cv_section_body .bg_cv_exp .cv_exp_card .cv_exp_card_content, #main_index #section_CV header article .bg_cv_header .bg_cv_header_titre, #main_index #section_accueil article, main .bg_zone_fade, main h1, main .bg_titre {
-  margin-left: auto;
-  margin-right: auto;
 }
 
 #main_index #section_realisation img, #main_index #section_CV header img, #main_index #section_accueil article img {
@@ -105,6 +105,14 @@ main .bg_titre, header nav .nav_link {
 #main_index #section_CV header .bg_cv_frame .img_cv_frame img, #main_index #section_accueil article img {
   border: #F8F1E5 0.5em solid;
   border-radius: 25em;
+}
+
+#main_contact #form_confirm_container #form_confirm, #main_contact .form_style form fieldset textarea, #main_contact .form_style form fieldset input, #main_contact .form_style form fieldset legend {
+  border-radius: 0.2em;
+}
+
+#main_contact #form_confirm_container #form_confirm, #main_contact .form_style form fieldset legend, #main_contact .form_style form fieldset {
+  padding: 0 2em;
 }
 
 * {
@@ -344,9 +352,6 @@ main .bg_zone_fade {
   background-color: #021c1e;
   height: 100%;
 }
-#main_contact .form_style form fieldset {
-  padding: 0.2em;
-}
 #main_contact .form_style form fieldset label {
   text-align: left;
 }
@@ -354,14 +359,12 @@ main .bg_zone_fade {
   width: 100%;
   background-color: #F8F1E5;
   border: #6FB98F 2px solid;
-  border-radius: 0.2em;
 }
 #main_contact .form_style form fieldset textarea {
   width: 100%;
   height: 20em;
   background-color: #F8F1E5;
   border: #6FB98F 2px solid;
-  border-radius: 0.2em;
 }
 #main_contact .form_style form .form_btn .btn_form {
   width: 9em;
@@ -369,20 +372,22 @@ main .bg_zone_fade {
   padding: 0.2em;
   border-radius: 0.2em;
   letter-spacing: 0.1em;
-  margin: 0.5em;
+  margin: 0.5em 0.5em 0 0.5em;
+}
+#main_contact #form_confirm_container #form_confirm {
+  margin-bottom: 2em;
 }
 #main_contact .class_modal {
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 100px;
+  padding-top: 30em;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: #021c1e;
-  background-color: rgba(2, 28, 30, 0.4);
+  background-color: rgba(2, 28, 30, 0.5764705882);
 }
 #main_contact .class_modal .form_modal_content {
   position: relative;
@@ -410,7 +415,6 @@ main .bg_zone_fade {
 }
 #main_contact .class_modal .form_modal_header {
   padding: 2px 16px;
-  background: linear-gradient(90deg, #69462b 0%, #b37f56 100%);
 }
 #main_contact .class_modal .form_modal_body {
   padding: 2px 16px;

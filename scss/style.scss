@@ -188,7 +188,7 @@ main {
                 margin-top: 3.5em;
                 margin-bottom: 1.5em;
                 max-width: 25em;
-                padding: 0.5em;
+                padding: .5em;
 
             }
         }
@@ -317,7 +317,7 @@ main {
                             @extend %title_font;
                             border: 2px solid transparent;
                             border-radius: 1em;
-                            padding: 0.2em 0.5em;
+                            padding: .2em .5em;
                             text-align: center;
                         }
 
@@ -398,7 +398,14 @@ main {
             @extend %text_font2;
 
             fieldset {
-                padding: .2em;
+                @extend %p_0_2;
+                legend{
+                    @extend %title_font;
+                    @extend %bg_cv_bronze_gradient;
+                    @extend %p_0_2;
+                    @extend %border_round_0_2;
+                    @extend %text_center;
+                }
 
                 label {
                     text-align: left;
@@ -408,7 +415,7 @@ main {
                     width: 100%;
                     background-color: $Bone;
                     border: $Greenery 2px solid;
-                    border-radius: .2em;
+                    @extend %border_round_0_2;
                 }
 
                 textarea {
@@ -416,7 +423,7 @@ main {
                     height: 20em;
                     background-color: $Bone;
                     border: $Greenery 2px solid;
-                    border-radius: .2em;
+                    @extend %border_round_0_2;
                 }
             }
 
@@ -425,32 +432,43 @@ main {
 
                 .btn_form {
                     @include button_form;
-                    margin: .5em;
+                    margin: .5em .5em 0 .5em;
                 }
             }
         }
     }
+    #form_confirm_container{
+        @extend %text_center;
 
+        #form_confirm{
+            margin-bottom: 2em;
+            @extend %title_font;
+            @extend %bg_cv_bronze_gradient;
+            @extend %p_0_2;
+            @extend %border_round_0_2;
+            @extend %text_center;
+        }
+    }
     //MODAL
     .class_modal {
         display: none;
         position: fixed;
         z-index: 1;
-        padding-top: 100px;
+        padding-top: 30em;
         left: 0;
         top: 0;
         width: 100%;
         height: 100%;
         overflow: auto;
-        background-color: $BlueBlack;
         background-color: $BlueBlackFade;
+        @include flex_center_row;
 
         .form_modal_content {
             position: relative;
             background-color: $BlueGreenGradient1;
             margin: auto;
             padding: 0;
-            border: 1px solid #888;
+            border: 1px solid $modalBorder;
             width: 80%;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             -webkit-animation-name: animatetop;
@@ -473,7 +491,7 @@ main {
         .form_modal_header {
             @extend %text_center;
             padding: 2px 16px;
-            background: $BronzeGradient;
+            @extend %bg_cv_bronze_gradient;
             @extend %text_bone;
             @extend %title_font;
         }
@@ -486,7 +504,7 @@ main {
 
             button{
                 @include button_form;
-                margin: 0.5em;
+                margin: .5em;
             }
         }
     }
@@ -529,7 +547,7 @@ footer {
 
     .social_link a {
         @extend %text_bone;
-        margin: 0.3em 0.3em;
+        margin: .3em .3em;
     }
 
     .footer_link:hover a {
@@ -545,7 +563,7 @@ footer {
         a {
             @extend %link_fix;
             @extend %text_bone;
-            margin: 0.2em 0;
+            margin: .2em 0;
             padding: 0 2em;
             width: 16em;
         }

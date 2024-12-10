@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../../css/frameworks/fontawesome.min.css">
     <link rel="stylesheet" href="../../css/style.css">
     <script defer src="../../js/frameworks/bootstrap.bundle.min.js"></script>
+    <script defer src="../../js/frameworks/jquery.min.js"></script>
     <script defer src="../../js/main.js"></script>
 
 </head>
@@ -92,17 +93,21 @@
                             <!-- Modal content -->
                             <div class="form_modal_content">
                                 <div class="form_modal_header">
-                                    <span class="form_modal_close">&times;</span>
+                                    <span id="close_modal" class="form_modal_close">&times;</span>
                                     <h2>Souhaitez-vous valider l'envoi du formulaire</h2>
                                 </div>
                                 <div class="form_modal_body">
-                                    <button>Envoyer</button>
-                                    <button>Annuler</button>
+                                    <button id="form_modal_btn1">Envoyer</button>
+                                    <button id="form_modal_btn2">Annuler</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <!-- message de confirmation -->
+             <div id="form_confirm_container">
+                 <span id="form_confirm" class="d_none"></span>
              </div>
         </section>
     </main>
