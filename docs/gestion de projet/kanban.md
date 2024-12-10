@@ -146,8 +146,8 @@
     </tr>
     <tr>
         <td class="todo"></td>
-        <td class="inprog">Vérifier ce qui pourrait améliorer l'accéssibilté aria label ect...</td>
-        <td class="done"></td>
+        <td class="inprog"></td>
+        <td class="done">Vérifier ce qui pourrait améliorer l'accéssibilté aria label ect...</td>
     </tr>
     <tr>
         <td class="todo">Mettre à jour la documentation</td>

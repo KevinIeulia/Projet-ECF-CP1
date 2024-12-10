@@ -49,35 +49,47 @@ Il comporte 3 pages principales :
 ---
 ---
 ## Structure du Projet
-
+Voici un aperçu de la structure du répertoire du projet :
 ```
 /projet 
     /assets/ 
         /imgs/ 
-        /movies/ 
-        /sounds/ 
     /fonts/ 
     /css/ 
-        /normalize.min.css 
-        /style.min.css 
+        /normalize.css
+        /normalize.min.css                   # CSS de normalisation
+        /style.css
+        /style.min.css                       # Fuille de style du site
+        /zoning.css
+        /zoning.min.css                      # CSS de zoning pour le developpement
     /scss/ 
         /_variable.scss 
         /_colors.scss 
         /_typo.scss 
         /_mixins.scss 
         /_extends.scss 
-        /style.scss 
+        /style.scss                          # style global SCSS
+        /normalyse.scss                      # CSS de normalisation
+        /zoning.scss                         # SCSS de zoning pour le developpement
     /js/ 
-        /app.js 
+        /main.js
+        /main.min.js
         /frameworks/ 
-    /docs/ 
-        /documentation.md 
-        /issues.md 
-        /pseudo-code.md 
+    /docs/
+        /issues.md
+        /use-ai.md
+        /documentation technique.md 
         /wireframes.png 
-        /prototypes.png 
-    /index.html 
+        /prototypes.png
+        /gestion de projet/
+              /sprint.md
+              /backlog.md
+              /kaban.md
+              /user story.md
+    /.gitignore
+    /index.html                           # Point d'entrée de l'application
     /README.md 
+    /LICENSE
 ```
 <!-- **Explications :** -->
 
@@ -112,40 +124,65 @@ Il comporte 3 pages principales :
    ```
    npm install terser
    ```
-### Minifications :
+## Compilation du style SCSS
 
-**CSS minifié :**
-   ```
-   npm run build:scss
-   ```
-**JavaScript minifié :**
-   ```
-   npx terser js/app.js -o js/app.min.js
-   ```
-   ou
-   ```
-   npm run build:js
-   ```
-### package.json
+Une fois Node.js et npm installés, vous pouvez installer Sass. Le paquet que vous allez utiliser s'appelle simplement `sass`.
 
-   - Ajoutez les scripts suivant dans `package.json` pour automatiser:  
-   ```
-   "scripts": {
-      "build:scss": "sass --style=compressed scss/style.scss css/style.min.css"
-   }
-   ```
-   ```
-   "scripts": {
-      "build:js": "npx terser js/app.js -o js/app.min.js"
-   }
-   ```
+```bash
+npm install -g sass
+```
+
+vous pouvez le compiler en `style.css` avec la commande suivante :
+
+```bash
+sass public/scss/style.scss public/css/style.css
+```
+
+```bash
+sass --watch public/scss/style.scss:public/css/style.css
+```
+
+Cette commande surveillera le fichier `style.scss` et le recompiler automatiquement en `style.css` à chaque modification.
+
+Vous pouvez également surveiller un dossier entier :
+
+```bash
+sass --watch public/scss/:public/css/
+```
+
+Compiler la totalité des fichiers SCSS en mode production :
+
+```bash
+sass public/scss/normalize.scss public/css/normalize.min.css --style compressed
+sass public/scss/zoning.scss public/css/zoning.min.css --style compressed
+sass public/scss/style.scss public/css/style.min.css --style compressed
+sass public/scss/views/:public/css/views/ --style compressed
+```
+
+Cela créera les fichiers `*.min.css` minifié, optimisé pour une utilisation en production.
+
+## Minifier les fichiers JavaScript
+
+Avec Terser (plus moderne) :
+
+`npm install -g terser`
+
+Minifiez les scripts JS :
+
+```bash
+terser public/js/app.js -o public/js/app.min.js
+terser public/js/frameworks/rick.js -o public/js/frameworks/rick.min.js
+find public/js/components -type f -name "*.min.js" -exec sh -c 'rm -rf $0' {} \;
+find public/js/components -type f -name "*.js" -exec sh -c 'terser "$0" -o "${0%.js}.min.js"' {} \;
+```
 
 ### Gestion du Projet 
 
 1. **liens du projet sur GitHub :**  
-https://github.com/KevinIeulia/Projet-ECF-CP1.git
+https://github.com/KevinIeulia/Projet-ECF-CP1
 
 2. **Utilisation de GitHub Projects : Kanban pour la gestion des tâches :**
+https://github.com/users/KevinIeulia/projects/4
 
 
 
@@ -174,7 +211,9 @@ https://github.com/KevinIeulia/Projet-ECF-CP1.git
    - **Sprint** : séquence courte dans laquelle les différents collaborateurs d'un projet vont travailler à l'accomplissement d'un objectif.
 
 
+## Licence
 
+Ce projet est sous licence GNU GPL V3 - voir le fichier [LICENSE](https://www.gnu.org/licenses/) pour plus de détails.
 
 
 
