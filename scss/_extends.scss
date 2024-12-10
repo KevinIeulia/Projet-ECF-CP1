@@ -1,6 +1,15 @@
+//text
 %text_bone{
     color: $Bone;
 }
+%text_bold{
+    font-weight: bold;
+}
+%section_link_hover{
+    transition: 0.2s ease; 
+    opacity: 0.3;
+}
+//background
 %bg_gradient_barre{
     background: $BlueGreenGradient1;
 }
@@ -10,6 +19,7 @@
 %bg_cv_grey{
     background-color: $cv_grey;
 }
+//positionnement
 %d_flex{
     display: flex;
 }
@@ -25,14 +35,11 @@
 %text_center{
     text-align: center;
 }
-%text_bold{
-    font-weight: bold;
+//margin auto
+%margin_auto{
+    margin-left: auto;
+    margin-right: auto;
 }
-%section_link_hover{
-    transition: 0.2s ease; 
-    opacity: 0.3;
-}
-
 //font
 %link_fix{
     font-family: $link_font;
@@ -47,23 +54,29 @@
     font-family: $title_font;
     letter-spacing: .05em;
 }
-
 %link_fix_hover{
     transition: 1s ease;
     opacity: initial;
 }
-%margin_auto{
-    margin-left: auto;
-    margin-right: auto;
-}
+//images
 %img_flex{
     width: 100%;
     height: auto;
 }
+//width
 %w70{
     width: 70%;
 }
+//border
 %img_bord_round{
     border : $Bone .5em solid;
     border-radius: 25em;
 }
+%border_round_0_2{
+    border-radius: 0.2em;
+}
+//pading
+%p_0_2{
+    padding: 0 2em;
+}
+// margin
