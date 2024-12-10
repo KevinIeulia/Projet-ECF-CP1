@@ -62,7 +62,16 @@
     border-radius: 20em;
     font-size: 1em;
 }
-
+// button du formulaire et du modal formulaire
+@mixin button_form {
+    width: 9em;
+    margin-top: .5em;
+    padding: .2em;
+    @extend %text_bone;
+    @extend %bg_gradient_barre;
+    border-radius: .2em;
+    letter-spacing: .1em;
+}
 
 
 // RESPONSIVE BREAKPOINTS

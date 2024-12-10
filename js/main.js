@@ -118,8 +118,7 @@ if (select("#main_contact")) {
         if (regexNom.test(getValue("#nom")) &&
             regexPrenom.test(getValue("#prenom")) &&
             regexEmail.test(getValue("#email")) &&
-            regexMessage.test(getValue("#message"))) 
-            {
+            regexMessage.test(getValue("#message"))) {
             removeClass("#form_submit", "d_none");
         }
         else {
@@ -129,9 +128,36 @@ if (select("#main_contact")) {
     //button reset formulaire
     select("#form_reset").addEventListener("click", function () {
         selectAll("fieldset>span").forEach(element => {
-                element.innerHTML = "";            
+            element.innerHTML = "";
         })
     })
+
+    // Modale du formulaire
+    // Get the modal
+    var formModal = document.getElementById("form_modal");
+
+    // Get the button that opens the modal
+    var submitBtn = document.getElementById("form_submit");
+
+    // Get the <closeModal> element that closes the modal
+    var closeModal = document.getElementsByClassName("form_modal_close")[0];
+
+    // When the user clicks the button, open the modal 
+    submitBtn.onclick = function () {
+        formModal.style.display = "block";
+    }
+
+    // When the user clicks on <closeModal> (x), close the formModal
+    closeModal.onclick = function () {
+        formModal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the formModal, close it
+    window.onclick = function (event) {
+        if (event.target == formModal) {
+            formModal.style.display = "none";
+        }
+    }
 }
 
 l("page contact ok!")

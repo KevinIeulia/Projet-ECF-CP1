@@ -170,6 +170,11 @@
         <th> DONE </th>
     </tr>
     <tr>
+        <td class="todo"></td>
+        <td class="inprog">créer modal pour le formulaire</td>
+        <td class="done"></td>
+    </tr>
+    <tr>
         <td class="todo">Supprimer ce qui n'a pas été utilisé</td>
         <td class="inprog"></td>
         <td class="done"></td>

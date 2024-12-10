@@ -21,23 +21,32 @@ body {
 }
 
 // RAVEN ANIME 
-@keyframes right_to_left { 
-    from { transform: translateX(0%) } 
-    to { transform: translateX(-600%) translateY(100%) }  
-    }
-@keyframes cycle { 
-    0%  { transform: translate(0%, 0%) scaleY(-1)} 
-    50% { transform: translate(-600%, 100%) }
-    51% { transform: translate(-600%, 100%) scale(-1)}
-    100% { transform: translate(0%, 200%) scaleX(-1) }  
-    }
-#raven{
-        position: absolute;
-        top: 2em;
-        left : 70%;
-        animation: cycle 10s linear 2s 1 ;
-        animation: name duration timing-function delay iteration-count direction fill-mode;
-    }
+@keyframes cycle {
+    0% {        transform: translate(0%, 0%) scaleY(-1)}
+    50% {transform: translate(-600%, 100%)}
+    51% {transform: translate(-600%, 100%) scale(-1)}
+    100% {transform: translate(0%, 200%) scaleX(-1)}
+}
+
+#raven {
+    position: absolute;
+    top: 2em;
+    left: 70%;
+    animation: cycle 10s linear 2s 1;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+// MODAL ANIME
+@-webkit-keyframes animatetop {
+    from {top: -300px;opacity: 0}
+    to {top: 0;opacity: 1}
+}
+
+@keyframes animatetop {
+    from {top: -300px;opacity: 0}
+    to {top: 0;opacity: 1}
+}
+
 // HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER 
 header {
     @extend %text_center;
@@ -79,6 +88,7 @@ header {
 
         .nav_link {
             @extend %w70;
+
             a {
                 @extend %link_fix;
                 @extend %text_bone;
@@ -329,32 +339,38 @@ main {
         img {
             @extend %img_flex;
         }
+
         h2 {
             @extend %title_font;
             padding: .2em 1em;
             border-radius: .2em
         }
-        h2:hover{
+
+        h2:hover {
             cursor: pointer;
         }
+
         p {
-                @extend %text_font2;
-                @include flex_center_row;
-                padding: 1em;
-                text-align: justify;
-                margin-bottom: 0;
-            }
-        .real_card_img{
+            @extend %text_font2;
+            @include flex_center_row;
+            padding: 1em;
+            text-align: justify;
+            margin-bottom: 0;
+        }
+
+        .real_card_img {
             @include flex_center_row;
         }
-        .realisation_card_left{
+
+        .realisation_card_left {
             h2 {
                 background: $BlueGreenGradient3;
             }
-    
-            
+
+
         }
-        .realisation_card_right{
+
+        .realisation_card_right {
             h2 {
                 background: $BlueGreenGradient4;
                 text-align: right;
@@ -370,7 +386,7 @@ main {
 
     // TITRE DE PAGE
     h1 {
-        width: 10em;
+        width: 12em;
     }
 
     //FORMULAIRE
@@ -408,19 +424,73 @@ main {
                 @extend %text_center;
 
                 .btn_form {
-                    width: 9em;
-                    margin-top: .5em;
-                    padding: .2em;
-                    @extend %text_bone;
-                    @extend %bg_gradient_barre;
-                    border-radius: .2em;
-                    letter-spacing: .1em;
+                    @include button_form;
+                    margin: .5em;
                 }
             }
         }
     }
-}
 
+    //MODAL
+    .class_modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: $BlueBlack;
+        background-color: $BlueBlackFade;
+
+        .form_modal_content {
+            position: relative;
+            background-color: $BlueGreenGradient1;
+            margin: auto;
+            padding: 0;
+            border: 1px solid #888;
+            width: 80%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            -webkit-animation-name: animatetop;
+            -webkit-animation-duration: 0.4s;
+            animation-name: animatetop;
+            animation-duration: 0.4s
+        }
+        .form_modal_close {
+            color: white;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+
+            &:hover, &:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+            }          
+        }
+        .form_modal_header {
+            @extend %text_center;
+            padding: 2px 16px;
+            background: $BronzeGradient;
+            @extend %text_bone;
+            @extend %title_font;
+        }
+        .form_modal_body {
+            padding: 2px 16px;
+            @include flex_center_row;
+            background: $BlueGreenGradient2;
+            @extend %text_bone;
+            @extend %text_font2;
+
+            button{
+                @include button_form;
+                margin: 0.5em;
+            }
+        }
+    }
+}
 // MAIN PAGE LEGAL NOTICE
 #main_LegNot {
 
@@ -520,11 +590,12 @@ footer {
 @include breakpointMax($size: sm) {
 
     //RAVEN
-    
-    #raven{
+
+    #raven {
         display: none;
-        
+
     }
+
     // HEADER
     header {
         .logo_site_max {
@@ -559,27 +630,33 @@ footer {
     }
 
     // >> EXPERIENCE
-    .cv_exp_title{
+    .cv_exp_title {
         margin: .5em .2em;
         padding: .5em;
         background: black;
         border-radius: .5em;
         // text-align: center;
     }
+
     .cv_exp_card {
         background-color: $cv_grey;
         border-radius: 1em;
-        .cv_exp_card_date{
+
+        .cv_exp_card_date {
             margin-top: .3em;
         }
-        .cv_exp_card_content{
-            h4{
+
+        .cv_exp_card_content {
+            h4 {
                 background: $DarkGreyBorderBronzeGradient !important;
             }
-            span, ul{
+
+            span,
+            ul {
                 text-align: left;
             }
-            span{
+
+            span {
                 margin: .5em 0;
             }
         }
@@ -597,9 +674,10 @@ footer {
 
 // MEDIA QUERY MAXIMUM MD 768px
 @include breakpointMax($size: md) {
-    #raven{
+    #raven {
         display: none;
     }
+
     // HEADER
     header {
         .logo_site_max {
@@ -706,13 +784,14 @@ footer {
     }
 }
 
-@include breakpointMin($size: lg){
-    .bg_cv_comp{
-         ul{
+@include breakpointMin($size: lg) {
+    .bg_cv_comp {
+        ul {
             margin-top: 1em;
             margin-bottom: 2em;
         }
-        li{
+
+        li {
             margin: .4em;
         }
     }

@@ -133,7 +133,7 @@ développer pour le projet.
         <td>P12</td><!-- ID -->
         <td>Vérifier accessibilité</td><!-- FONCTIONNALITÉ -->
         <td>Haute</td><!-- PRIORITÉ -->
-        <td>À faire</td><!-- STATUS -->
+        <td>Terminé</td><!-- STATUS -->
         <td>??</td><!-- ESTIMATION (POINTS) -->
         <td>I.K</td><!-- RESPONSABLE -->
     </tr>
@@ -141,7 +141,7 @@ développer pour le projet.
         <td>P13</td><!-- ID -->
         <td>MAJ documentation , correction des petits bugs</td><!-- FONCTIONNALITÉ -->
         <td>Haute</td><!-- PRIORITÉ -->
-        <td>À faire</td><!-- STATUS -->
+        <td>Terminé</td><!-- STATUS -->
         <td>??</td><!-- ESTIMATION (POINTS) -->
         <td>I.K</td><!-- RESPONSABLE -->
     </tr>
