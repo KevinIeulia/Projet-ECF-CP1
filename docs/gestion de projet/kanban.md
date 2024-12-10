@@ -145,17 +145,17 @@
         <th> DONE </th>
     </tr>
     <tr>
-        <td class="todo">Vérifier ce qui pourrait améliorer l'accéssibilté aria label ect...</td>
+        <td class="todo"></td>
+        <td class="inprog">Vérifier ce qui pourrait améliorer l'accéssibilté aria label ect...</td>
+        <td class="done"></td>
+    </tr>
+    <tr>
+        <td class="todo">Mettre à jour la documentation</td>
         <td class="inprog"></td>
         <td class="done"></td>
     </tr>
     <tr>
-        <td class="todo">mettre à jour la documentation</td>
-        <td class="inprog"></td>
-        <td class="done"></td>
-    </tr>
-    <tr>
-        <td class="todo">supprimer ce qui n'a pas été utilisé</td>
+        <td class="todo">Supprimer ce qui n'a pas été utilisé</td>
         <td class="inprog"></td>
         <td class="done"></td>
     </tr>
