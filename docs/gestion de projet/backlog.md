@@ -109,7 +109,7 @@ développer pour le projet.
         <td>P9</td><!-- ID -->
         <td>JS verification des données du formulaire de contact</td><!-- FONCTIONNALITÉ -->
         <td>Haute</td><!-- PRIORITÉ -->
-        <td>À faire</td><!-- STATUS -->
+        <td>Terminé</td><!-- STATUS -->
         <td>10</td><!-- ESTIMATION (POINTS) -->
         <td>I.K</td><!-- RESPONSABLE -->
     </tr>
@@ -117,7 +117,7 @@ développer pour le projet.
         <td>P10</td><!-- ID -->
         <td>JS menu dynamique de la page d'accueil</td><!-- FONCTIONNALITÉ -->
         <td>Haute</td><!-- PRIORITÉ -->
-        <td>À faire</td><!-- STATUS -->
+        <td>Terminé</td><!-- STATUS -->
         <td>10</td><!-- ESTIMATION (POINTS) -->
         <td>I.K</td><!-- RESPONSABLE -->
     </tr>
@@ -125,7 +125,7 @@ développer pour le projet.
         <td>P11</td><!-- ID -->
         <td>Créer le JS pour ajouter des animationsn </td><!-- FONCTIONNALITÉ -->
         <td>Haute</td><!-- PRIORITÉ -->
-        <td>À faire</td><!-- STATUS -->
+        <td>Terminé</td><!-- STATUS -->
         <td>8</td><!-- ESTIMATION (POINTS) -->
         <td>I.K</td><!-- RESPONSABLE -->
     </tr>
@@ -139,7 +139,7 @@ développer pour le projet.
     </tr>
     <tr>
         <td>P13</td><!-- ID -->
-        <td>optionnel essayer d'utiliser vue.js et creer profil dark/light</td><!-- FONCTIONNALITÉ -->
+        <td>MAJ documentation , nettoyge fichier/ressource non utilisé</td><!-- FONCTIONNALITÉ -->
         <td>Haute</td><!-- PRIORITÉ -->
         <td>À faire</td><!-- STATUS -->
         <td>??</td><!-- ESTIMATION (POINTS) -->
@@ -147,7 +147,15 @@ développer pour le projet.
     </tr>
     <tr>
         <td>P14</td><!-- ID -->
-        <td>MAJ documentation , nettoyge fichier/ressource non utilisé</td><!-- FONCTIONNALITÉ -->
+        <td>optionnel ajouter click zoom photo réalisation, bouton retour en haut, animation powpow et barre sticky</td><!-- FONCTIONNALITÉ -->
+        <td>Haute</td><!-- PRIORITÉ -->
+        <td>À faire</td><!-- STATUS -->
+        <td>??</td><!-- ESTIMATION (POINTS) -->
+        <td>I.K</td><!-- RESPONSABLE -->
+    </tr>
+    <tr>
+        <td>P15</td><!-- ID -->
+        <td>optionnel essayer d'utiliser vue.js et creer profil dark/light</td><!-- FONCTIONNALITÉ -->
         <td>Haute</td><!-- PRIORITÉ -->
         <td>À faire</td><!-- STATUS -->
         <td>??</td><!-- ESTIMATION (POINTS) -->
