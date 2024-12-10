@@ -139,7 +139,7 @@ développer pour le projet.
     </tr>
     <tr>
         <td>P13</td><!-- ID -->
-        <td>MAJ documentation , nettoyge fichier/ressource non utilisé</td><!-- FONCTIONNALITÉ -->
+        <td>MAJ documentation , correction des petits bugs</td><!-- FONCTIONNALITÉ -->
         <td>Haute</td><!-- PRIORITÉ -->
         <td>À faire</td><!-- STATUS -->
         <td>??</td><!-- ESTIMATION (POINTS) -->
@@ -147,7 +147,7 @@ développer pour le projet.
     </tr>
     <tr>
         <td>P14</td><!-- ID -->
-        <td>optionnel ajouter click zoom photo réalisation, bouton retour en haut, animation powpow et barre sticky</td><!-- FONCTIONNALITÉ -->
+        <td>MAJ documentation , nettoyge fichier/ressource non utilisé, minimization css et JS</td><!-- FONCTIONNALITÉ -->
         <td>Haute</td><!-- PRIORITÉ -->
         <td>À faire</td><!-- STATUS -->
         <td>??</td><!-- ESTIMATION (POINTS) -->
@@ -155,6 +155,14 @@ développer pour le projet.
     </tr>
     <tr>
         <td>P15</td><!-- ID -->
+        <td>optionnel ajouter click zoom photo réalisation, bouton retour en haut, animation powpow et barre sticky</td><!-- FONCTIONNALITÉ -->
+        <td>Haute</td><!-- PRIORITÉ -->
+        <td>À faire</td><!-- STATUS -->
+        <td>??</td><!-- ESTIMATION (POINTS) -->
+        <td>I.K</td><!-- RESPONSABLE -->
+    </tr>
+    <tr>
+        <td>P16</td><!-- ID -->
         <td>optionnel essayer d'utiliser vue.js et creer profil dark/light</td><!-- FONCTIONNALITÉ -->
         <td>Haute</td><!-- PRIORITÉ -->
         <td>À faire</td><!-- STATUS -->

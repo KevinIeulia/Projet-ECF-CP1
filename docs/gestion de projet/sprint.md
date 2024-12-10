@@ -107,7 +107,7 @@
 <!-- SPRINT 4 -->
 <table> 
     <tr>
-        <th colspan="5"> SPRINT 4 durée ?? - date 08/12/2024 </th>
+        <th colspan="5"> SPRINT 4 durée ?? - date 09/12/2024 </th>
     </tr>        
     <tr>
         <th class="titre"> OBJECTIF DU SPRINT </th>
@@ -141,7 +141,7 @@
 <!-- SPRINT 5 -->
 <table> 
     <tr>
-        <th colspan="5"> SPRINT 5 durée ?? - date 08/12/2024 </th>
+        <th colspan="5"> SPRINT 5 durée ?? - date 10/12/2024 </th>
     </tr>        
     <tr>
         <th class="titre"> OBJECTIF DU SPRINT </th>
@@ -151,8 +151,42 @@
         <th class="titre"> ÉTAT </th>
     </tr>
     <tr>
-        <td>- Vérifier accessibilité<br> -MAJ documentation , nettoyge fichier/ressource non utilisé</td>
-        <td>- Vérifier ce qui pourrait améliorer l'accéssibilté aria label ect...<br> - mettre à jour la documentation et supprimer ce qui n'a pas été utilisé</td>
+        <td>- Vérifier accessibilité<br> -MAJ documentation <br>- Correction des petits bugs</td>
+        <td>- Vérifier ce qui pourrait améliorer l'accéssibilté aria label ect...<br> - mettre à jour la documentation <br>corriger les petits bugs</td>
+        <td>I.K</td>
+        <td>24 pts</td>
+        <td class="not_ok"></td>
+    </tr>
+</table>
+<table> 
+    <tr>
+        <th colspan="2">BACKLOG SPRINT 5</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>ras</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>???</td>
+    </tr>
+</table>
+
+<!-- SPRINT 6 -->
+<table> 
+    <tr>
+        <th colspan="5"> SPRINT 6 durée ?? - date 10/12/2024 </th>
+    </tr>        
+    <tr>
+        <th class="titre"> OBJECTIF DU SPRINT </th>
+        <th class="titre"> TACHES </th>
+        <th class="titre"> RESPONSABLE </th>
+        <th class="titre"> ESTIMATION DE POINTS </th>
+        <th class="titre"> ÉTAT </th>
+    </tr>
+    <tr>
+        <td>- nettoyage fichier/ressource non utilisé<br> -minimization css <br>minimization JS </td>
+        <td>- nettoyage de ce qui n'est pas utilisé pour dans le projet<br> - minimization du css <br>minimization du JS</td>
         <td>I.K</td>
         <td>24 pts</td>
         <td class="not_ok"></td>
