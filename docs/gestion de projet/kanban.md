@@ -150,12 +150,37 @@
         <td class="done">Vérifier ce qui pourrait améliorer l'accéssibilté aria label ect...</td>
     </tr>
     <tr>
-        <td class="todo">Mettre à jour la documentation</td>
+        <td class="todo"></td>
+        <td class="inprog"></td>
+        <td class="done">Mettre à jour la documentation</td>
+    </tr>
+    <tr>
+        <td class="todo"></td>
+        <td class="inprog"></td>
+        <td class="done">Corriger les petits bugs</td>
+    </tr>
+</table>
+
+<!-- SPRNT 6 -->
+### Kaban sprint 6
+<table> 
+  <tr>
+        <th> TO DO </th>
+        <th> IN PROGRESS </th>
+        <th> DONE </th>
+    </tr>
+    <tr>
+        <td class="todo">Supprimer ce qui n'a pas été utilisé</td>
         <td class="inprog"></td>
         <td class="done"></td>
     </tr>
     <tr>
-        <td class="todo">Supprimer ce qui n'a pas été utilisé</td>
+        <td class="todo">minimization css</td>
+        <td class="inprog"></td>
+        <td class="done"></td>
+    </tr>
+    <tr>
+        <td class="todo">minimization JS</td>
         <td class="inprog"></td>
         <td class="done"></td>
     </tr>

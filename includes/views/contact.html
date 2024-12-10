@@ -77,16 +77,17 @@
                                 <input type="email" id="email" name="email" required >
                                 <span id="valid_email"></span><br>
                                 <!-- MESSAGE -->
-                                <label for="Message">Message :</label><br>
-                                <textarea id="Message" name="Message" required></textarea>
+                                <label for="message">Message :</label><br>
+                                <textarea id="message" name="message" required></textarea>
                                 <span id="valid_message"></span><br>
                             </fieldset>
                             <!-- BUTTON -->
                              <div class="form_btn">
-                                 <input type="submit" value="Validez" class="btn_form">
-                                 <input type="reset" value="Annulez" class="btn_form">
+                                 <input type="submit" id="form_submit" value="Validez" class="btn_form d_none" aria-label="bouton pour valider l'envoi du formulaire">
+                                 <input type="reset" id="form_reset" value="Annulez" class="btn_form" aria-label="bouton pour effacer les données entrer dans le formulaire">
                              </div>
                         </form>
+                        <!-- MODAL -->
                     </div>
                 </div>
              </div>

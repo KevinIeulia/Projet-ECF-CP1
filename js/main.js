@@ -83,7 +83,7 @@ if (select("#main_contact")) {
         element.value = "";
     })
 
-    //pour effacer ce qui est écrit dans le formulaire en ckickant
+    //pour effacer ce qui est écrit dans le formulaire en cliquant
     selectAll("fieldset>input, textarea").forEach(element => {
         element.addEventListener("click", function () {
             if (element.value != "") {
@@ -99,19 +99,41 @@ if (select("#main_contact")) {
     //Vérif prénom
     select("#prenom").addEventListener("input", function () {
         let temp = getValue("#prenom");
-        verifChamp(temp, "#valid_prenom", regexPrenom, "prénom Valid !", "prénom Invalide ! Min 1 Max 20 lettres")
+        verifChamp(temp, "#valid_prenom", regexPrenom, "Prénom Valid !", "Prénom Invalide ! Min 1 Max 20 lettres")
     })
     //Vérif email
     select("#email").addEventListener("input", function () {
         let temp = getValue("#email");
-        verifChamp(temp, "#valid_email", regexEmail, "email Valid !", "email Invalide !")
+        verifChamp(temp, "#valid_email", regexEmail, "Email Valid !", "Email Invalide !")
     })
     //Vérif message
-    select("#email").addEventListener("input", function () {
-        let temp = getValue("#email");
-        verifChamp(temp, "#valid_email", regexEmail, "email Valid !", "email Invalide !")
+    select("#message").addEventListener("input", function () {
+        let temp = getValue("#message");
+        l(temp)
+        verifChamp(temp, "#valid_message", regexMessage, "Message Valid !", "Message Invalide !")
+    })
+    //button envoyer formulaire
+
+    select("form").addEventListener("input", function () {
+        if (regexNom.test(getValue("#nom")) &&
+            regexPrenom.test(getValue("#prenom")) &&
+            regexEmail.test(getValue("#email")) &&
+            regexMessage.test(getValue("#message"))) 
+            {
+            removeClass("#form_submit", "d_none");
+        }
+        else {
+            addClass("#form_submit", "d_none");
+        }
+    })
+    //button reset formulaire
+    select("#form_reset").addEventListener("click", function () {
+        selectAll("fieldset>span").forEach(element => {
+                element.innerHTML = "";            
+        })
     })
 }
+
 l("page contact ok!")
 
 // 2-MENU DYNAMIQUE
@@ -163,7 +185,7 @@ function menuDynamique() {
             verifAddClass("#section_CV", "d_none");
             verifAddClass("#section_accueil", "d_none");
             break;
-    
+
         default:
             break;
     }
@@ -175,12 +197,12 @@ l("menu dynamique ok!")
 
 
 //JQUERY ANIMATION
-$(document).ready(function () {
-    console.log("Le DOM est prêt !");
-});
 
-if (select("#main_index")){
-    
+if (select("#main_index")) {
+    $(document).ready(function () {
+        console.log("Le DOM est prêt !");
+    });
+
     $("#section_realisation h2").next("div").slideUp(0);
     $("#section_realisation h2").click(function () {
         $(this).next("div").slideToggle(1000);
