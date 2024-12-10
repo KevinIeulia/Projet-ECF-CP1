@@ -1,7 +1,7 @@
 **Utilisation de l'ia** :
-    -pour la documentation →contenu du read me
+- pour la documentation → contenu du read me
 
-**Utilisation de l'ih David** :
+**Utilisation de l'ih David** :  
 Astuces :
 - Location.href
 - Avec regex et Switch 
