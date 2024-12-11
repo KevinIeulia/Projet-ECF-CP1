@@ -218,7 +218,13 @@ if (select("#main_index")) {
 
 l("menu dynamique ok!")
 
+// SOCIAL LINK
 
+selectAll(".social_link a").forEach(element => {
+    if (element.getAttribute("href") === "") {
+        element.classList.add("d_none");
+    }
+});
 
 
 
