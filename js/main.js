@@ -123,6 +123,7 @@ if (select("#main_contact")) {
     })
 
     // MODALE DU FORMULAIRE
+
     // Bouton pour ouvrir la modale et bloquer le submit
     select("#form_submit").onclick = function () {
         event.preventDefault()
@@ -163,7 +164,7 @@ l("page contact ok!")
 // 2-MENU DYNAMIQUE
 
 l("js menu dynamique");
-//MENU DYNAMIQUE AVEC LES LIENS DE LA PAGE INDEX
+//FONCTION MENU DYNAMIQUE AVEC LES LIENS DE LA PAGE INDEX
 function menuDynamiqueLink() {
     select("#accueil").addEventListener("click", function () {
         displayBlockDnone("#section_accueil", "#section_CV", "#section_realisation");
@@ -178,7 +179,7 @@ function menuDynamiqueLink() {
         changeURL("/index.html?realisation");
     })
 }
-//MENU DYNAMIQUE AVEC VERIF URL
+//FONCTION MENU DYNAMIQUE AVEC VERIF URL
 function menuDynamiqueUrl() {
     const regexAccueil = /accueil/;
     const regexCv = /cv/;

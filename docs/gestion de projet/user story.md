@@ -70,17 +70,17 @@
     <tr>
         <td>1</td>
         <td colspan="2">Présenter un nombre suffisant de réalisation</td>
-        <td class="not_ok"></td>
+        <td class="ok"></td>
     </tr>
     <tr>
         <td>2</td>
         <td colspan="2">Les réalisations peuvent refléter la progression et/ou les meilleurs projets</td>
-        <td class="not_ok"></td>
+        <td class="ok"></td>
     </tr>
     <tr>
         <td>3</td>
         <td colspan="2">Si les deux, mettre en avant les meilleurs projets</td>
-        <td class="not_ok"></td>
+        <td class="ok"></td>
     </tr>
 </table>
 
@@ -113,7 +113,7 @@
     <tr>
         <td>2</td>
         <td colspan="2">Champ "Message" non vide.</td>
-        <td class="not_ok"></td>
+        <td class="ok"></td>
     </tr>
     <tr>
         <td>3</td>

@@ -171,22 +171,22 @@
     </tr>
     <tr>
         <td class="todo"></td>
-        <td class="inprog">créer modal pour le formulaire</td>
-        <td class="done"></td>
+        <td class="inprog"></td>
+        <td class="done">créer modal pour le formulaire</td>
     </tr>
     <tr>
-        <td class="todo">Supprimer ce qui n'a pas été utilisé</td>
+        <td class="todo"></td>
         <td class="inprog"></td>
-        <td class="done"></td>
+        <td class="done">Supprimer ce qui n'a pas été utilisé</td>
     </tr>
     <tr>
-        <td class="todo">minimization css</td>
+        <td class="todo"></td>
         <td class="inprog"></td>
-        <td class="done"></td>
+        <td class="done">minimization css</td>
     </tr>
     <tr>
-        <td class="todo">minimization JS</td>
+        <td class="todo"></td>
         <td class="inprog"></td>
-        <td class="done"></td>
+        <td class="done">minimization JS</td>
     </tr>
 </table>
