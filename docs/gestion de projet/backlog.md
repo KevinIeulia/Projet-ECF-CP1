@@ -149,7 +149,7 @@ développer pour le projet.
         <td>P14</td><!-- ID -->
         <td>MAJ documentation , nettoyge fichier/ressource non utilisé, minimization css et JS</td><!-- FONCTIONNALITÉ -->
         <td>Haute</td><!-- PRIORITÉ -->
-        <td>À faire</td><!-- STATUS -->
+        <td>Terminé</td><!-- STATUS -->
         <td>??</td><!-- ESTIMATION (POINTS) -->
         <td>I.K</td><!-- RESPONSABLE -->
     </tr>

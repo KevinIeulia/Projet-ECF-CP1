@@ -135,11 +135,11 @@ npm install -g sass
 vous pouvez le compiler en `style.css` avec la commande suivante :
 
 ```bash
-sass public/scss/style.scss public/css/style.css
+sass scss/style.scss css/style.css
 ```
 
 ```bash
-sass --watch public/scss/style.scss:public/css/style.css
+sass --watch scss/style.scss:css/style.css
 ```
 
 Cette commande surveillera le fichier `style.scss` et le recompiler automatiquement en `style.css` à chaque modification.
@@ -147,16 +147,15 @@ Cette commande surveillera le fichier `style.scss` et le recompiler automatiquem
 Vous pouvez également surveiller un dossier entier :
 
 ```bash
-sass --watch public/scss/:public/css/
+sass --watch scss/:css/
 ```
 
 Compiler la totalité des fichiers SCSS en mode production :
 
 ```bash
-sass public/scss/normalize.scss public/css/normalize.min.css --style compressed
-sass public/scss/zoning.scss public/css/zoning.min.css --style compressed
-sass public/scss/style.scss public/css/style.min.css --style compressed
-sass public/scss/views/:public/css/views/ --style compressed
+sass scss/normalize.scss css/normalize.min.css --style compressed
+sass scss/zoning.scss css/zoning.min.css --style compressed
+sass scss/style.scss css/style.min.css --style compressed
 ```
 
 Cela créera les fichiers `*.min.css` minifié, optimisé pour une utilisation en production.
@@ -170,10 +169,8 @@ Avec Terser (plus moderne) :
 Minifiez les scripts JS :
 
 ```bash
-terser public/js/app.js -o public/js/app.min.js
-terser public/js/frameworks/rick.js -o public/js/frameworks/rick.min.js
-find public/js/components -type f -name "*.min.js" -exec sh -c 'rm -rf $0' {} \;
-find public/js/components -type f -name "*.js" -exec sh -c 'terser "$0" -o "${0%.js}.min.js"' {} \;
+terser js/main.js -o js/main.min.js
+
 ```
 
 ### Gestion du Projet 
