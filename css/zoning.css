@@ -1,0 +1,64 @@
+* {
+  margin: 3px;
+  padding: 3px;
+}
+
+header {
+  border: solid 2px red;
+}
+
+main {
+  border: solid 2px blue;
+}
+
+footer {
+  border: solid 2px yellow;
+}
+
+img {
+  border: solid 2px green;
+}
+
+div {
+  border: solid 2px black;
+}
+
+span {
+  border: solid 2px #555;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  border: solid 2px fuchsia;
+}
+
+a {
+  border: solid 2px teal;
+}
+
+p {
+  border: solid 2px rgb(146, 143, 143);
+}
+
+nav, ul, ol {
+  border: solid 2px rgb(42, 237, 68);
+}
+
+li {
+  border: solid 2px rgb(18, 175, 237);
+}
+
+section {
+  border: solid 2px rgb(145, 14, 84);
+}
+
+article {
+  border: solid 2px rgb(165, 118, 144);
+}
+
+blockquote, figcaption {
+  border: solid 2px rgb(129, 201, 21);
+}
+
+aside {
+  border: solid 2px rgb(129, 201, 21);
+}/*# sourceMappingURL=zoning.css.map */

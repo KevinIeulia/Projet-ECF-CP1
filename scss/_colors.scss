@@ -1,0 +1,65 @@
+// Bootstrap colors
+$colors: (
+    'bg'        : white, 
+    'text'      : black, 
+    'primary'   : #007bff, 
+    'secondary' : #6c757d, 
+    'success'   : #28a745, 
+    'info'      : #17a2b8, 
+    'warning'   : #ffc107, 
+    'danger'    : #dc3545, 
+    'light'     : #f8f9fa,
+    'dark'      : #343a40,
+    'body'      : #212529,
+    'muted'     : #6c757d,
+);
+
+
+
+// COLORS THEMES
+$BlueBlack : #021c1e;
+$BlueBlackFade : #021c1e93;
+$CadetBlue :  #004445;
+$Rain : #2C7873;
+$Greenery : #6FB98F;
+$greenery_fade : #6fb98f9c;
+$Bone : #F8F1E5;
+$transparent : #00000000;
+$Bone_fade2 : #f8f1e51c;
+$Bone2 : #eaeae9;
+$cv_grey : #303033;
+$cv_dark_grey : #212122;
+$cv_bronze : #69462b;
+$cv_bronze2 : #b37f56;
+$black : black; 
+$modalBorder : #888;
+// GRADIENTS THEMES
+
+$BlueGreenGradient1 : linear-gradient(90deg, black, $BlueBlack,$CadetBlue,$Rain,$Greenery);
+$BlueGreenGradient2 : linear-gradient(90deg, $BlueBlack 30%,$CadetBlue 50%,$Rain 70%,$Greenery 100%);
+$BlueGreenGradient3 : linear-gradient(90deg, black 30%, $BlueBlack 45%,$CadetBlue 55%,$Rain 65%,$transparent 100%);
+$BlueGreenGradient4 : linear-gradient(270deg, black 30%, $BlueBlack 45%,$CadetBlue 55%,$Rain 65%,$transparent 100%);
+
+$BoneGradient1 : linear-gradient(90deg, $transparent 0%,$Bone 45%,$Bone 55%,$transparent 100%);
+$BronzeGradient : linear-gradient(90deg, $cv_bronze 0%,$cv_bronze2 100%);
+$GreyGradient : linear-gradient(90deg, $cv_grey, $cv_grey);
+$BlackGradient : linear-gradient(90deg, $cv_dark_grey, $cv_dark_grey);
+$GreyBorderBronzeGradient : $GreyGradient padding-box,
+                            $BronzeGradient border-box;
+$DarkGreyBorderBronzeGradient : $BlackGradient padding-box,
+                             $BronzeGradient border-box;
+// // Custom Colors
+
+// $Black : black ;
+// $RedCrimson : #9b0505;
+// $GreyDark : #141414;
+// $GreyLight : #434343;
+// $GreyDarkTrans : #141414b4;
+// $GreyLightTrans : #4343439c;
+
+// // Custom Gradients
+
+// $BlaRedGradient1 : linear-gradient(119deg, $Black 10%, $RedCrimson 90%);
+// $BlaRedGradient2 : linear-gradient(119deg, $Black 47%, $RedCrimson 53%);
+// $BlaRedGradient3 : linear-gradient(-10deg, $Black ,$RedCrimson 40%, $RedCrimson 60% , $Black);
+// $bgCcustomTtitle : linear-gradient(119deg, $GreyLightTrans 30%, $GreyDarkTrans );

@@ -1,0 +1,147 @@
+//BACKGROUND IMAGE COVER FIX
+@mixin bg_img_cov_fix {
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+//FOOTER ALWAYS ON BOTTOM
+//on body
+@mixin footer_bottom1 {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+//on footer
+@mixin footer_bottom2 {
+    margin-top: auto;
+}
+
+//flex center row
+@mixin flex_center_row {
+    @extend %d_flex;
+    @extend %justify_center;
+    @extend %it_center;
+}
+
+//flex center colmun
+@mixin flex_center {
+    @extend %d_flex;
+    @extend %it_center;
+    @extend %flex_column;
+    @extend %margin_auto;
+}
+
+//Background transparent , fond des zone principal
+@mixin bg_zone_fade {
+    @include flex_center;
+    @extend %text_bone;
+    background-color: $Bone_fade2;
+    border-radius: 1em;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    padding: 1em;
+}
+
+//background dark pour section
+@mixin bg_zone_dark {
+    width: 95%;
+    padding: 1em;
+    border: $Greenery 1px solid;
+    border-radius: 1em;
+    background-color: $BlueBlack;
+    height: 100%;
+}
+
+// Bronze round for CV
+@mixin bg_cv_bronze {
+    @extend %bg_cv_bronze_gradient;
+    width: 2em;
+    height: 2em;
+    margin: 0.1em 0.4em;
+    border-radius: 20em;
+    font-size: 1em;
+}
+// button du formulaire et du modal formulaire
+@mixin button_form {
+    width: 9em;
+    margin-top: .5em;
+    padding: .2em;
+    @extend %text_bone;
+    @extend %bg_gradient_barre;
+    border-radius: .2em;
+    letter-spacing: .1em;
+}
+
+
+// RESPONSIVE BREAKPOINTS
+
+@mixin breakpointMin($size: sm) {
+    @if $size ==xs {
+        @media (min-width: 0px) {
+            @content;
+        }
+    }
+
+    @else if $size ==sm {
+        @media (min-width: 576px) {
+            @content;
+        }
+    }
+
+    @else if $size ==md {
+        @media (min-width: 768px) {
+            @content;
+        }
+    }
+
+    @else if $size ==lg {
+        @media (min-width: 992px) {
+            @content;
+        }
+    }
+
+    @else if $size ==xl {
+        @media (min-width: 1200px) {
+            @content;
+        }
+    }
+
+    @else if $size ==xxl {
+        @media (min-width: 1400px) {
+            @content;
+        }
+    }
+}
+
+@mixin breakpointMax($size: xxl) {
+    @if $size ==sm {
+        @media (max-width: 576px) {
+            @content;
+        }
+    }
+
+    @else if $size ==md {
+        @media (max-width: 768px) {
+            @content;
+        }
+    }
+
+    @else if $size ==lg {
+        @media (max-width: 992px) {
+            @content;
+        }
+    }
+
+    @else if $size ==xl {
+        @media (max-width: 1200px) {
+            @content;
+        }
+    }
+
+    @else if $size ==xxl {
+        @media (max-width: 1400px) {
+            @content;
+        }
+    }
+}

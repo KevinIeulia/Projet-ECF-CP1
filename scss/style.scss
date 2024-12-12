@@ -1,0 +1,823 @@
+@import "_variables";
+@import "_colors";
+@import "_typo";
+@import "_extends";
+@import "_mixins";
+
+* {
+    box-sizing: border-box;
+}
+
+// BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY BODY
+
+body {
+    background-image: url("../assets/imgs/background/background_img_012.webp");
+    @include bg_img_cov_fix;
+    @include footer_bottom1;
+
+    .d_none {
+        display: none !important;
+    }
+}
+
+// RAVEN ANIME 
+@keyframes cycle {
+    0% {        transform: translate(0%, 0%) scaleY(-1)}
+    50% {transform: translate(-600%, 100%)}
+    51% {transform: translate(-600%, 100%) scale(-1)}
+    100% {transform: translate(0%, 200%) scaleX(-1)}
+}
+
+#raven {
+    position: absolute;
+    top: 2em;
+    left: 70%;
+    animation: cycle 10s linear 2s 1;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+// MODAL ANIME
+@-webkit-keyframes animatetop {
+    from {top: -300px;opacity: 0}
+    to {top: 0;opacity: 1}
+}
+
+@keyframes animatetop {
+    from {top: -300px;opacity: 0}
+    to {top: 0;opacity: 1}
+}
+
+// HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER 
+header {
+    @extend %text_center;
+
+    // LOGO SITE
+    .logo_site_max {
+        width: 100%;
+        height: auto;
+        max-width: 25em;
+    }
+
+    // NAVBAR
+    nav {
+        @extend %d_flex;
+        @extend %it_center;
+        justify-content: space-between;
+        background: $BlueGreenGradient1;
+        padding: 0 1em;
+        border-top: 2px solid $Bone;
+        border-bottom: 2px solid $Bone;
+
+        // NAV LOGO
+        .nav_logo {
+            width: 15%;
+            @extend %d_flex;
+            @extend %it_center;
+            margin: .2em 0;
+
+            img {
+                width: 2.8em;
+                height: auto;
+            }
+        }
+
+        // NAV LINK
+        .nav_link:hover a {
+            @extend %section_link_hover;
+        }
+
+        .nav_link {
+            @extend %w70;
+
+            a {
+                @extend %link_fix;
+                @extend %text_bone;
+                font-size: 1.2em;
+                width: 8em;
+                display: inline-block;
+                border-radius: 5px;
+            }
+
+            a:hover {
+                padding: .2em;
+                margin: .2em 2em;
+                background-color: $Bone;
+                color: $Rain;
+                @extend %link_fix_hover;
+            }
+        }
+
+        // NAV THEME DARK/LIGHT
+        .nav_theme {
+            width: 15%;
+            text-align: right;
+
+            button {
+                @extend %text_bone;
+                background: transparent;
+                border-color: $Rain;
+                border-radius: 50px;
+                margin: .5em;
+                width: 2em;
+                height: 2em;
+            }
+        }
+    }
+}
+
+// MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN 
+
+main {
+
+    // TITRE DE PAGE (ALL)
+    .bg_titre {
+        @extend %w70;
+        @extend %margin_auto;
+        margin-top: 3em;
+        background: $BoneGradient1;
+    }
+
+    h1 {
+        @extend %title_font;
+        @extend %text_center;
+        @extend %text_bold;
+        @extend %margin_auto;
+        background: $BlueGreenGradient2;
+        background-clip: text;
+        color: transparent;
+    }
+
+    .bg_zone_fade {
+        @include bg_zone_fade;
+    }
+}
+
+
+// MAIN PAGE INDEX
+
+#main_index {
+
+    // SECTION ACCUEIL
+    #section_accueil {
+
+        // TITRE DE PAGE
+        h1 {
+            width: 7em;
+        }
+
+        //ARTICLE + IMG
+        article {
+            @include flex_center;
+            @extend %text_bone;
+            @extend %text_font2;
+            text-align: center;
+
+            h2 {
+                margin-top: 1.5em;
+                margin-bottom: 1.5em;
+                font-size: 2.5em;
+            }
+
+            p {
+                font-size: 1.2em;
+            }
+
+            img {
+                @extend %img_flex;
+                @extend %img_bord_round;
+                margin-top: 3.5em;
+                margin-bottom: 1.5em;
+                max-width: 25em;
+                padding: .5em;
+
+            }
+        }
+
+    }
+
+    // SECTION CV
+    #section_CV {
+        @extend %d_flex;
+        @extend %flex_column;
+
+        // SECTION CV HEADER
+        header {
+            @extend %d_flex;
+
+            // SECTION CV HEADER IMG LEFT
+            img {
+                @extend %img_flex;
+            }
+
+            .bg_cv_frame {
+                @extend %bg_cv_grey;
+
+                .img_cv_frame {
+                    padding: 2em 1em 1em 1em;
+                    background-image: url("../assets/imgs/cv/grillecv.webp");
+                    background-size: 65%;
+                    background-repeat: no-repeat;
+
+                    img {
+                        @extend %img_bord_round;
+                        max-width: 18em;
+                    }
+                }
+            }
+
+            // SECTION CV HEADER INFO RIGHT
+            article {
+                padding: 1em;
+
+                img {
+                    margin-bottom: 2em;
+                }
+
+                .bg_cv_header {
+                    @extend %bg_cv_bronze_gradient;
+                    border-radius: 20em;
+                    @extend %text_center;
+                    padding: 2em;
+
+                    .bg_cv_header_titre {
+                        width: 80%;
+                        @extend %margin_auto;
+                        margin-top: auto;
+                        margin-bottom: auto;
+                        font-family: $text_font2;
+
+                        h2 {
+                            @extend %title_font;
+                        }
+                    }
+                }
+            }
+        }
+
+        // SECTION CV BODY
+        .cv_section_body {
+            width: 100%;
+            height: 100%;
+            font-family: $text_font2;
+
+            // BODY LEFT COMP ATOUTS LOISIRS LANGUES CONTACT
+            .bg_cv_comp {
+                padding: 0;
+
+                article {
+                    @extend %bg_cv_grey;
+                    padding: 1em;
+                    height: 100%;
+
+                    div {
+                        @extend %d_flex;
+
+                        span {
+                            @include flex_center_row;
+                            @include bg_cv_bronze;
+                        }
+
+                        h3 {
+                            @extend %title_font;
+                        }
+                    }
+                }
+            }
+
+            // BODY RIGHT EXPERIENCE ET FORMATION
+            .bg_cv_exp {
+                padding: 1em;
+
+                .cv_exp_title {
+                    @extend %d_flex;
+
+                    span {
+                        @include flex_center_row;
+                        @include bg_cv_bronze;
+                    }
+
+                    h3 {
+                        @extend %title_font;
+                    }
+
+                }
+
+                .cv_exp_card {
+                    .cv_exp_card_date {
+                        @include flex_center_row;
+                        border-right: $cv_bronze2 2px solid;
+                        margin-bottom: 1em;
+                    }
+
+                    .cv_exp_card_content {
+                        @include flex_center;
+
+                        h4 {
+                            background: $DarkGreyBorderBronzeGradient;
+                            @extend %title_font;
+                            border: 2px solid transparent;
+                            border-radius: 1em;
+                            padding: .2em .5em;
+                            text-align: center;
+                        }
+
+                        span {
+                            font-style: italic;
+                            margin-bottom: .6em;
+                        }
+                    }
+                }
+            }
+        }
+
+
+        // SECTION REALISATIONS
+    }
+
+    // SECTION REALISATIONS
+    #section_realisation {
+        img {
+            @extend %img_flex;
+        }
+
+        h2 {
+            @extend %title_font;
+            padding: .2em 1em;
+            border-radius: .2em
+        }
+
+        h2:hover {
+            cursor: pointer;
+        }
+
+        p {
+            @extend %text_font2;
+            @include flex_center_row;
+            padding: 1em;
+            text-align: justify;
+            margin-bottom: 0;
+        }
+
+        .real_card_img {
+            @include flex_center_row;
+        }
+
+        .realisation_card_left {
+            h2 {
+                background: $BlueGreenGradient3;
+            }
+
+
+        }
+
+        .realisation_card_right {
+            h2 {
+                background: $BlueGreenGradient4;
+                text-align: right;
+            }
+
+        }
+    }
+}
+
+// MAIN PAGE CONTACT
+
+#main_contact {
+
+    // TITRE DE PAGE
+    h1 {
+        width: 12em;
+    }
+
+    //FORMULAIRE
+    .form_style {
+        @include bg_zone_fade;
+
+        form {
+            @include bg_zone_dark;
+            @extend %text_font2;
+
+            fieldset {
+                @extend %p_0_2;
+                legend{
+                    @extend %title_font;
+                    @extend %bg_cv_bronze_gradient;
+                    @extend %p_0_2;
+                    @extend %border_round_0_2;
+                    @extend %text_center;
+                }
+
+                label {
+                    text-align: left;
+                }
+
+                input {
+                    width: 100%;
+                    background-color: $Bone;
+                    border: $Greenery 2px solid;
+                    @extend %border_round_0_2;
+                }
+
+                textarea {
+                    width: 100%;
+                    height: 20em;
+                    background-color: $Bone;
+                    border: $Greenery 2px solid;
+                    @extend %border_round_0_2;
+                }
+            }
+
+            .form_btn {
+                @extend %text_center;
+
+                .btn_form {
+                    @include button_form;
+                    margin: .5em .5em 0 .5em;
+                }
+            }
+        }
+    }
+    #form_confirm_container{
+        @extend %text_center;
+
+        #form_confirm{
+            margin-bottom: 2em;
+            @extend %title_font;
+            @extend %bg_cv_bronze_gradient;
+            @extend %p_0_2;
+            @extend %border_round_0_2;
+            @extend %text_center;
+        }
+    }
+    //MODAL
+    .class_modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 30em;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: $BlueBlackFade;
+        @include flex_center_row;
+
+        .form_modal_content {
+            position: relative;
+            background-color: $BlueGreenGradient1;
+            margin: auto;
+            padding: 0;
+            border: 1px solid $modalBorder;
+            width: 80%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            -webkit-animation-name: animatetop;
+            -webkit-animation-duration: 0.4s;
+            animation-name: animatetop;
+            animation-duration: 0.4s
+        }
+        .form_modal_close {
+            color: white;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+
+            &:hover, &:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+            }          
+        }
+        .form_modal_header {
+            @extend %text_center;
+            padding: 2px 16px;
+            @extend %bg_cv_bronze_gradient;
+            @extend %text_bone;
+            @extend %title_font;
+        }
+        .form_modal_body {
+            padding: 2px 16px;
+            @include flex_center_row;
+            background: $BlueGreenGradient2;
+            @extend %text_bone;
+            @extend %text_font2;
+
+            button{
+                @include button_form;
+                margin: .5em;
+            }
+        }
+    }
+}
+// MAIN PAGE LEGAL NOTICE
+#main_LegNot {
+
+    // TITRE DE PAGE
+    h1 {
+        width: 16em;
+    }
+
+    // ARTICLE
+    .article_style {
+        @include bg_zone_fade;
+
+        section {
+            @include bg_zone_dark;
+            @extend %text_font2;
+
+            h2 {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+// FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER 
+footer {
+    @include footer_bottom2;
+    @extend %text_center;
+
+    span {
+        color: $greenery_fade;
+    }
+
+    .social_link {
+        margin: .2em;
+    }
+
+    .social_link a {
+        @extend %text_bone;
+        margin: .3em .3em;
+    }
+
+    .footer_link:hover a {
+        @extend %section_link_hover;
+    }
+
+    .footer_link {
+        @extend %bg_gradient_barre;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            @extend %link_fix;
+            @extend %text_bone;
+            margin: .2em 0;
+            padding: 0 2em;
+            width: 16em;
+        }
+
+        a:hover {
+            @extend %link_fix_hover;
+            @extend %text_bold;
+        }
+    }
+
+    .f_link_left {
+        text-align: right;
+        margin-right: .5em;
+    }
+
+    .f_link_right {
+        text-align: left;
+        margin-left: .5em;
+        border-left: 2px solid $Bone;
+    }
+}
+
+
+// RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE RESPONSIVE 
+
+// MEDIA QUERY MINIMUM SM 576px
+@include breakpointMin($size: sm) {
+
+    //  HEADER
+    header {
+        .logo_site_max {
+            display: initial;
+        }
+
+        .logo_site_min {
+            display: none;
+        }
+    }
+}
+
+// MEDIA QUERY MAXIMUM SM 576px
+@include breakpointMax($size: sm) {
+
+    //RAVEN
+
+    #raven {
+        display: none;
+
+    }
+
+    // HEADER
+    header {
+        .logo_site_max {
+            display: none;
+        }
+
+        .logo_site_min {
+            display: block;
+            text-align: center;
+            width: 100%;
+            height: auto;
+            max-width: 80%;
+            margin: .5em auto;
+        }
+
+        nav {
+            .nav_theme {
+                button {
+                    margin: .3em;
+                }
+            }
+        }
+    }
+
+    // MAIN PAGE INDEX SECTION CV 
+    // >> COMP ect...
+
+    .bg_cv_comp {
+        article {
+            border-radius: 1em;
+        }
+    }
+
+    // >> EXPERIENCE
+    .cv_exp_title {
+        margin: .5em .2em;
+        padding: .5em;
+        background: black;
+        border-radius: .5em;
+        // text-align: center;
+    }
+
+    .cv_exp_card {
+        background-color: $cv_grey;
+        border-radius: 1em;
+
+        .cv_exp_card_date {
+            margin-top: .3em;
+        }
+
+        .cv_exp_card_content {
+            h4 {
+                background: $DarkGreyBorderBronzeGradient !important;
+            }
+
+            span,
+            ul {
+                text-align: left;
+            }
+
+            span {
+                margin: .5em 0;
+            }
+        }
+    }
+
+    // MAIN PAGE INDEX SECTION REALISATIONS
+
+    #section_realisation {
+
+        h2 {
+            text-align: center;
+        }
+    }
+    //MAIN PAGE CONTACT formulaire
+    #main_contact{
+        legend{
+            font-size: .8em;
+        }
+    }
+}
+
+// MEDIA QUERY MAXIMUM MD 768px
+@include breakpointMax($size: md) {
+    #raven {
+        display: none;
+    }
+
+    // HEADER
+    header {
+        .logo_site_max {
+            max-width: 20em;
+        }
+
+        nav {
+            .nav_logo {
+                width: 15%;
+            }
+
+            .nav_link {
+                width: 70%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                a {
+                    margin: 0 1em;
+                }
+            }
+
+            .nav_theme {
+                width: 15%;
+
+                button {
+                    margin: .1em;
+                }
+            }
+        }
+    }
+
+    // MAIN TITRE PAGE (ALL) 
+    #main_contact,
+    #main_LegNot,
+    #main_index {
+        .bg_titre {
+            margin-top: 2em;
+            width: 95%;
+        }
+    }
+
+    // MAIN LegNot
+    #main_LegNot {
+        margin: 1em;
+
+        h1 {
+            width: 10em;
+        }
+
+        .article_style {
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+    }
+}
+
+// MEDIA QUERY MAXIMUM LG 992px
+@include breakpointMax($size: lg) {
+
+    // MAIN LegNot
+    #main_LegNot {
+        .article_style {
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+    }
+
+    //MAIN INDEX
+    // SECTION CV
+    #main_index {
+        #section_CV {
+
+            .cv_section_body {
+                .bg_cv_comp {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .bg_cv_exp {
+                    text-align: center;
+
+                    .cv_exp_card {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        margin-left: auto;
+                        margin-right: auto;
+
+                        .cv_exp_card_date {
+
+                            border-right: none;
+                            border-top: $cv_bronze2 2px solid;
+                            border-bottom: $cv_bronze2 2px solid;
+                        }
+
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+@include breakpointMin($size: lg) {
+    .bg_cv_comp {
+        ul {
+            margin-top: 1em;
+            margin-bottom: 2em;
+        }
+
+        li {
+            margin: .4em;
+        }
+    }
+
+}

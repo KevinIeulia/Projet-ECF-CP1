@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I.K Portfolio</title>
+    <link rel="icon" href="../../assets/imgs/favicon/favicon.webp">
+    <link rel="stylesheet" href="../../css/normalyse.css">
+    <!-- <link rel="stylesheet" href="css/zoning.css"> -->
+    <link rel="stylesheet" href="../../css/frameworks/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/frameworks/fontawesome.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script defer src="../../js/frameworks/bootstrap.bundle.min.js"></script>
+    <script defer src="../../js/frameworks/jquery.min.js"></script>
+    <script defer src="../../js/main.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <!-- LOGO SITE -->
+        <section>
+            <img src="../../assets/imgs/logo/Logo site dark.webp" class="logo_site_max" alt="Logo portfolio Ieulia Kevin" title="Logo portfolio Ieulia Kevin">
+            <img src="../../assets/imgs/logo/Logo site dark linear.webp" class="logo_site_min" alt="Logo portfolio Ieulia Kevin" title="Logo portfolio Ieulia Kevin">
+        </section>
+        <!-- NAVBAR -->
+        <section>
+            <nav>
+                <!-- LOGO NAV -->
+                <div class="nav_logo">
+                    <img src="../../assets/imgs/logo/IK1.webp" alt="logo I.K portfolio" title="logo I.K portfolio">
+                </div>
+                <!-- LIENS -->
+                <div class="nav_link">
+                    <a href="../../index.html?accueil" aria-label="Navigation vers la page d'accueil">ACCUEIL</a>
+                    <a href="../../index.html?cv" aria-label="Navigation vers la page de mon curriculum vitæ">CV</a>
+                    <a href="../../index.html?realisation" aria-label="Navigation vers la page de mes réalisations">RÉALISATION</a>
+                </div>
+                <!-- THEME DARK/LIGHT-->
+                <div class="nav_theme">
+                    <!-- change solid by regular to switch style-->
+                    <button type="button" aria-label="bouton pour passer en thème sombre">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                    <button type="button" aria-label="bouton pour passer en thème clair">
+                        <i class="fa-solid fa-sun"></i>
+                    </button>
+                </div>
+            </nav>
+        </section>
+    </header>
+    <main id="main_contact">
+        <section>
+            <!-- TITRE -->
+             <div class="bg_titre">
+                 <h1>
+                     CONTACTEZ-MOI
+                 </h1>
+             </div>
+            <div class="container">
+                <div class="row">
+                    <div class="form_style col-11 col-sm-10 col-md-9 col-lg-7 col-xl-6 col-xxl-5">
+                        <!-- FORMULAIRE DE CONTACT -->
+                        <form action="http://bienvu.net/script.php" method="post">
+                            <fieldset>
+                                <legend>FORMULAIRE</legend>
+                                <!-- NOM -->
+                                <label for="nom">Nom :</label><br>
+                                <input type="text" id="nom" name="nom" required >
+                                <span id="valid_nom"></span><br>
+                                <!-- PRENOM -->
+                                <label for="prenom">Prenom :</label><br>
+                                <input type="text" id="prenom" name="prenom" required >
+                                <span id="valid_prenom"></span><br>
+                                <!-- EMAIL -->
+                                <label for="email">Email :</label><br>
+                                <input type="email" id="email" name="email" required >
+                                <span id="valid_email"></span><br>
+                                <!-- MESSAGE -->
+                                <label for="message">Message :</label><br>
+                                <textarea id="message" name="message" required></textarea>
+                                <span id="valid_message"></span><br>
+                            </fieldset>
+                            <!-- BUTTON -->
+                             <div class="form_btn">
+                                 <input type="submit" id="form_submit" value="Validez" class="btn_form d_none" aria-label="bouton pour valider l'envoi du formulaire">
+                                 <input type="reset" id="form_reset" value="Reset" class="btn_form" aria-label="bouton pour effacer les données entrer dans le formulaire">
+                             </div>
+                        </form>
+                        <!-- MODAL -->
+                        <div id="form_modal" class="class_modal">
+                            <!-- Modal content -->
+                            <div class="form_modal_content">
+                                <div class="form_modal_header">
+                                    <span id="close_modal" class="form_modal_close">&times;</span>
+                                    <h2>Souhaitez-vous valider l'envoi du formulaire</h2>
+                                </div>
+                                <div class="form_modal_body">
+                                    <button id="form_modal_btn1">Envoyer</button>
+                                    <button id="form_modal_btn2">Annuler</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- message de confirmation -->
+             <div id="form_confirm_container">
+                 <span id="form_confirm" class="d_none"></span>
+             </div>
+        </section>
+    </main>
+    <footer>
+        <!-- SOCIAL MEDIA -->
+        <section>
+            <div>
+                <span>Retrouvez-nous sur les réseaux sociaux:</span>
+            </div>
+            <div class="social_link">
+                <a href="" aria-label="liens vers facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="" aria-label="liens vers twitter"><i class="fab fa-twitter"></i></a>
+                <a href="" aria-label="liens vers google"><i class="fab fa-google"></i></a>
+                <a href="" aria-label="liens vers instagram"><i class="fab fa-instagram"></i></a>
+                <a href="" aria-label="liens vers linkedin"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/KevinIeulia" aria-label="liens vers github"><i class="fab fa-github"></i></a>
+            </div>
+        </section>
+        <!-- FOOTER LINK -->
+        <section>
+            <div class="footer_link">
+                <a href="#" class="f_link_left" aria-label="liens vers page contact">CONTACT</a>
+                <a href="legal_notices.html" class="f_link_right" aria-label="liens vers page mentions légales">MENTIONS LÉGALES</a>
+            </div>
+        </section>
+
+    </footer>
+</body>
+
+</html>

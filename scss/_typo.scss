@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "COPPERPLATE";
+    src: url("../fonts/copperplategothic_bold.ttf");
+}
+$title_font: "COPPERPLATE";
+
+@font-face {
+    font-family: "SKYER";
+    src: url("../fonts/Skyer-TrialVersion.otf");
+}
+$link_font: "SKYER";
+
+@font-face {
+    font-family: "AKIRA";
+    src: url("../fonts/Akira_Expanded_Demo.otf");
+}
+$text_font1: "AKIRA";
+
+@font-face {
+    font-family: "COMIC";
+    src: url("../fonts/comic.ttf");
+}
+$text_font2: "COMIC";
+
+@font-face {
+    font-family: "CONSOLA";
+    src: url("../fonts/consola.ttf");
+}
+$text_font3: "CONSOLA";
+
+@font-face {
+    font-family: "BRUSHSCI";
+    src: url("../fonts/brushsci.ttf");
+}
+$text_font4: "BRUSHSCI";
